@@ -1,5 +1,6 @@
 package com.ouapproj.ShakJoRDVapp.bottomSheetFragment;
 
+import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.AlarmManager;
 import android.app.DatePickerDialog;
@@ -7,8 +8,13 @@ import android.app.Dialog;
 import android.app.PendingIntent;
 import android.app.TimePickerDialog;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.database.Cursor;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
+import android.preference.PreferenceManager;
+import android.provider.ContactsContract;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
@@ -16,7 +22,10 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
+import androidx.core.content.ContextCompat;
+import androidx.fragment.app.FragmentActivity;
 
 import com.ouapproj.ShakJoRDVapp.R;
 import com.ouapproj.ShakJoRDVapp.activity.MainActivity;
@@ -28,15 +37,20 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+import java.util.Objects;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 
+import static android.app.Activity.RESULT_OK;
 import static android.content.Context.ALARM_SERVICE;
 
 public class CreateTaskBottomSheetFragment extends BottomSheetDialogFragment {
 
+
+
+    private static final int RESULT_PICK_CONTACT = 1;
     Unbinder unbinder;
     @BindView(R.id.addTaskTitle)
     EditText addTaskTitle;
@@ -48,6 +62,7 @@ public class CreateTaskBottomSheetFragment extends BottomSheetDialogFragment {
     EditText taskTime;
     @BindView(R.id.taskEvent)
     EditText taskEvent;
+
     @BindView(R.id.addTask)
     Button addTask;
     int taskId;
@@ -134,6 +149,88 @@ public class CreateTaskBottomSheetFragment extends BottomSheetDialogFragment {
             }
             return true;
         });
+
+
+        taskEvent.setOnTouchListener((view, motionEvent) -> {
+
+                if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
+                    int permissionCheck = ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.READ_CONTACTS);
+
+                    if(permissionCheck == PackageManager.PERMISSION_GRANTED){
+                        // Get Contacts
+                        Intent in = new Intent(Intent.ACTION_PICK, ContactsContract.CommonDataKinds.Phone.CONTENT_URI);
+                        startActivityForResult(in, RESULT_PICK_CONTACT);
+                    }
+                    else {
+                        requestPermissions(new String[]{Manifest.permission.READ_CONTACTS},80);
+                        checkPermission();
+                    }
+                }
+
+            return true;
+        });
+    }
+
+    public void checkPermission(){
+        int permissionCheck=0;
+        permissionCheck = ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.READ_CONTACTS);
+        if(permissionCheck == PackageManager.PERMISSION_GRANTED){
+            // Get Contacts
+            Intent in = new Intent(Intent.ACTION_PICK, ContactsContract.CommonDataKinds.Phone.CONTENT_URI);
+            startActivityForResult(in, RESULT_PICK_CONTACT);
+        }
+    }
+
+//    @Override
+//    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+//
+//        if(requestCode==80){
+//            if(grantResults[0] == PackageManager.PERMISSION_GRANTED){
+//                Toast.makeText(getContext(),"Access contacts", Toast.LENGTH_SHORT).show();
+//            }else{
+//                Toast.makeText(getContext(),"Need to access contacts", Toast.LENGTH_SHORT).show();
+//            }
+//        }
+//    }
+//
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        if(resultCode==RESULT_OK)
+        {
+            switch (requestCode) {
+                case RESULT_PICK_CONTACT:
+                    contactPicked (data);
+                    break;
+            }
+        }
+        else
+        {
+            Toast.makeText(getActivity(), "Failed to pick contact",
+                    Toast.LENGTH_LONG).show();
+        }
+    }
+
+    private void contactPicked(Intent data) {
+        Cursor cursor = null;
+
+        try {
+            String phoneNo = null;
+            Uri uri = data.getData ();
+            cursor = getContext().getContentResolver().query (uri, null, null,null,null);
+            cursor.moveToFirst ();
+            int phoneIndex =0, phoneName=0;
+            String contactName="";
+
+            phoneIndex = cursor.getColumnIndex (ContactsContract.CommonDataKinds.Phone.NUMBER);
+            phoneName = cursor.getColumnIndex (ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME);
+            phoneNo = cursor.getString (phoneIndex);
+            contactName=cursor.getString(phoneName);
+            taskEvent.setText (contactName+" : "+phoneNo);
+
+
+        } catch (Exception e) {
+            e.printStackTrace ();
+        }
     }
 
     public boolean validateFields() {

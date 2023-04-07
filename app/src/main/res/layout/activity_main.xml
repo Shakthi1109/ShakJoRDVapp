@@ -30,7 +30,7 @@
    <TextView
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:text="All tasks"
+       android:text="All Meetings"
        fontPath="fonts/nunito_extra_bold.ttf"
        android:textStyle="bold"
        android:textColor="@color/colorAccent"

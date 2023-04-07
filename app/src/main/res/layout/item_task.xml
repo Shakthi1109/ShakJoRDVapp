@@ -104,12 +104,23 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                tools:text=""
+                tools:text="hh:mm"
                 android:singleLine="true"
                 android:alpha="0.5"
                 android:id="@+id/time"
                 android:textSize="12sp"
                 android:textColor="@android:color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="PersonName"
+                android:singleLine="true"
+                android:alpha="0.5"
+                android:id="@+id/person"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"/>
+
 
             <TextView
                 android:layout_width="wrap_content"

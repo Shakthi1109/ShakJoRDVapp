@@ -51,7 +51,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:text="Task title"
+            android:text="Meeting Description"
             tools:ignore="MissingPrefix" />
 
         <EditText
@@ -66,26 +66,6 @@
             android:id="@+id/addTaskTitle"
             tools:ignore="MissingPrefix" />
 
-    <TextView
-        android:layout_marginLeft="3dp"
-        fontPath="fonts/nunito_light.ttf"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="Task description"
-        tools:ignore="MissingPrefix" />
-
-    <EditText
-        android:textSize="14sp"
-        fontPath="fonts/nunito_light.ttf"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:singleLine="true"
-        android:background="@drawable/btn_border"
-        android:padding="10dp"
-        android:id="@+id/addTaskDescription"
-        tools:ignore="MissingPrefix" />
 
     <TextView
         android:layout_marginLeft="3dp"
@@ -93,7 +73,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="Task date"
+        android:text="Meeting date"
         tools:ignore="MissingPrefix" />
 
     <EditText
@@ -114,7 +94,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="Task time"
+        android:text="Meeting time"
         tools:ignore="MissingPrefix" />
 
     <EditText
@@ -135,7 +115,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="Add an event"
+        android:text="Contact person"
         tools:ignore="MissingPrefix" />
 
     <EditText
@@ -150,11 +130,33 @@
         android:id="@+id/taskEvent"
         tools:ignore="MissingPrefix" />
 
+    <TextView
+        android:layout_marginLeft="3dp"
+        fontPath="fonts/nunito_light.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Address"
+        tools:ignore="MissingPrefix" />
+
+    <EditText
+        android:textSize="14sp"
+        fontPath="fonts/nunito_light.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:singleLine="true"
+        android:background="@drawable/btn_border"
+        android:padding="10dp"
+        android:id="@+id/addTaskDescription"
+        tools:ignore="MissingPrefix" />
+
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/addTask"
-        android:text="Add task"
+        android:text="Add Meeting"
         android:background="@drawable/btn_background"
         android:textColor="@color/colorPrimary"
         android:layout_marginTop="40dp" />
