@@ -27,6 +27,7 @@ public class TaskAdapter$TaskViewHolder_ViewBinding implements Unbinder {
     target.status = Utils.findRequiredViewAsType(source, R.id.status, "field 'status'", TextView.class);
     target.options = Utils.findRequiredViewAsType(source, R.id.options, "field 'options'", ImageView.class);
     target.time = Utils.findRequiredViewAsType(source, R.id.time, "field 'time'", TextView.class);
+    target.event = Utils.findRequiredViewAsType(source, R.id.event, "field 'event'", TextView.class);
   }
 
   @Override
@@ -44,5 +45,6 @@ public class TaskAdapter$TaskViewHolder_ViewBinding implements Unbinder {
     target.status = null;
     target.options = null;
     target.time = null;
+    target.event = null;
   }
 }

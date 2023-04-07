@@ -62,6 +62,9 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder
         holder.description.setText(task.getTaskDescrption());
         holder.time.setText(task.getLastAlarm());
         holder.status.setText(task.isComplete() ? "COMPLETED" : "UPCOMING");
+        String temp = task.getEvent();
+        temp = temp.split(":")[0];
+        holder.event.setText(temp);
         holder.options.setOnClickListener(view -> showPopUpMenu(view, position));
 
         try {
@@ -177,6 +180,9 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder
         ImageView options;
         @BindView(R.id.time)
         TextView time;
+
+        @BindView(R.id.event)
+        TextView event;
 
         TaskViewHolder(@NonNull View view) {
             super(view);
