@@ -163,7 +163,6 @@ public class CreateTaskBottomSheetFragment extends BottomSheetDialogFragment {
                     }
                     else {
                         requestPermissions(new String[]{Manifest.permission.READ_CONTACTS},80);
-                        checkPermission();
                     }
                 }
 
@@ -171,28 +170,7 @@ public class CreateTaskBottomSheetFragment extends BottomSheetDialogFragment {
         });
     }
 
-    public void checkPermission(){
-        int permissionCheck=0;
-        permissionCheck = ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.READ_CONTACTS);
-        if(permissionCheck == PackageManager.PERMISSION_GRANTED){
-            // Get Contacts
-            Intent in = new Intent(Intent.ACTION_PICK, ContactsContract.CommonDataKinds.Phone.CONTENT_URI);
-            startActivityForResult(in, RESULT_PICK_CONTACT);
-        }
-    }
 
-//    @Override
-//    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-//
-//        if(requestCode==80){
-//            if(grantResults[0] == PackageManager.PERMISSION_GRANTED){
-//                Toast.makeText(getContext(),"Access contacts", Toast.LENGTH_SHORT).show();
-//            }else{
-//                Toast.makeText(getContext(),"Need to access contacts", Toast.LENGTH_SHORT).show();
-//            }
-//        }
-//    }
-//
     @Override
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         if(resultCode==RESULT_OK)

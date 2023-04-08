@@ -1099,7 +1099,8 @@ drawable ic_launcher_foreground
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
-drawable more
+drawable map2
+drawable more2
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
@@ -1115,8 +1116,10 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable phone4
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable white
 id ALT
 id CTRL
 id FUNCTION
@@ -1278,6 +1281,7 @@ id line3
 id listMode
 id list_item
 id many_days_picker
+id mapImg
 id masked
 id media_actions
 id menuComplete
@@ -1311,6 +1315,7 @@ id parent
 id parentPanel
 id parent_matrix
 id percent
+id phoneImg
 id pin
 id positive_button
 id previousButton
@@ -1415,6 +1420,7 @@ id viewpump_layout_res
 id viewpump_tag_id
 id visible
 id wednesdayLabel
+id white
 id withText
 id wrap
 id wrap_content

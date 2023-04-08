@@ -77,19 +77,36 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 tools:text="Full house"
-                android:singleLine="true"
                 android:textSize="20sp"
+                android:singleLine="true"
                 android:layout_weight="1"
                 android:id="@+id/title"
                 android:textColor="@android:color/black"/>
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/phoneImg"
+                    android:background="@drawable/phone4"/>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/white"
+                    android:background="@drawable/white"/>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
                     android:id="@+id/options"
-                    android:background="@drawable/more"/>
+                    android:paddingEnd="10dp"
+                    android:background="@drawable/more2"/>
 
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -98,10 +115,17 @@
                 android:singleLine="true"
                 android:alpha="0.5"
                 android:id="@+id/description"
-                android:paddingTop="4dp"
+                android:layout_weight="1"
+                android:paddingTop="1dp"
                 android:textSize="14sp"
                 android:textColor="@android:color/black"/>
 
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -109,17 +133,31 @@
                 android:singleLine="true"
                 android:alpha="0.5"
                 android:id="@+id/time"
-                android:paddingTop="1dp"
+                android:paddingTop="4dp"
+                android:layout_weight="1"
                 android:textSize="13sp"
                 android:textColor="@android:color/black"/>
 
+                <ImageView
+                    android:id="@+id/mapImg"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/map2"
+                    android:layout_gravity="left" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
                 <TextView
                     android:id="@+id/event"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:alpha="0.5"
-                    android:paddingTop="1dp"
                     android:singleLine="true"
+                    android:paddingTop="4dp"
+                    android:layout_weight="1"
                     android:textColor="@android:color/black"
                     android:textSize="13sp"
                     tools:text="PersonName" />
@@ -131,12 +169,13 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
                 android:paddingLeft="10dp"
-                android:paddingTop="0dp"
-                android:paddingRight="10dp"
+                android:paddingTop="3dp"
+                android:paddingRight="2dp"
                 android:paddingBottom="5dp"
                 android:text="COMPLETED"
                 android:textColor="@android:color/black"
                 android:textSize="12sp" />
+            </LinearLayout>
 
         </LinearLayout>
 

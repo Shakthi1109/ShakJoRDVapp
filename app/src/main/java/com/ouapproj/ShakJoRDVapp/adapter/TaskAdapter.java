@@ -1,10 +1,16 @@
 package com.ouapproj.ShakJoRDVapp.adapter;
 
+import android.Manifest;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.os.AsyncTask;
+import android.os.Build;
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,8 +18,10 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.ouapproj.ShakJoRDVapp.R;
@@ -39,6 +47,8 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder
     public SimpleDateFormat inputDateFormat = new SimpleDateFormat("dd-M-yyyy", Locale.US);
     Date date = null;
     String outputDateString = null;
+
+    private final int PHONE_PERMISSION_CODE = 1;
     CreateTaskBottomSheetFragment.setRefreshListener setRefreshListener;
 
     public TaskAdapter(MainActivity context, List<Task> taskList,  CreateTaskBottomSheetFragment.setRefreshListener setRefreshListener) {
@@ -58,14 +68,34 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder
     @Override
     public void onBindViewHolder(@NonNull TaskViewHolder holder, int position) {
         Task task = taskList.get(position);
+
+        String temp = task.getEvent();
+        String tempName = temp.split(":")[0];
+        String tempNum = temp.split(":")[1];
+        String location = task.getTaskDescrption();
+
         holder.title.setText(task.getTaskTitle());
         holder.description.setText(task.getTaskDescrption());
         holder.time.setText(task.getLastAlarm());
         holder.status.setText(task.isComplete() ? "COMPLETED" : "UPCOMING");
-        String temp = task.getEvent();
-        temp = temp.split(":")[0];
-        holder.event.setText(temp);
+        holder.event.setText(tempName);
         holder.options.setOnClickListener(view -> showPopUpMenu(view, position));
+        holder.phoneImg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                callPhone(tempNum);
+            }
+
+        });
+
+        holder.mapImg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri uri = Uri.parse("geo:0, 0?q="+location);
+                callMap(uri);
+
+            }
+        });
 
         try {
             date = inputDateFormat.parse(task.getDate());
@@ -84,6 +114,34 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder
             e.printStackTrace();
         }
     }
+
+
+    private void callPhone(String tempNum) {
+        if(ContextCompat.checkSelfPermission(context, Manifest.permission.CALL_PHONE) == PackageManager.PERMISSION_GRANTED) {
+            Intent phoneIntent = new Intent(Intent.ACTION_DIAL);
+            phoneIntent.setData(Uri.parse("tel:" + tempNum));
+            context.startActivity(phoneIntent);
+        }
+        else {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                context.requestPermissions(new String[]{Manifest.permission.CALL_PHONE}, PHONE_PERMISSION_CODE);
+            }
+        }
+    }
+
+    private void callMap(Uri uri) {
+        if(ContextCompat.checkSelfPermission(context, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW,uri);
+            mapIntent.setPackage("com.google.android.apps.maps");
+            context.startActivity(mapIntent);
+        }
+        else {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                context.requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, PHONE_PERMISSION_CODE);
+            }
+        }
+    }
+
 
     public void showPopUpMenu(View view, int position) {
         final Task task = taskList.get(position);
@@ -178,6 +236,12 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder
         TextView status;
         @BindView(R.id.options)
         ImageView options;
+
+        @BindView(R.id.phoneImg)
+        ImageView phoneImg;
+
+        @BindView(R.id.mapImg)
+        ImageView mapImg;
         @BindView(R.id.time)
         TextView time;
 
