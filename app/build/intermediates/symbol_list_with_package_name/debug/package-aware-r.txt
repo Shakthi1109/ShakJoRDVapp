@@ -646,6 +646,7 @@ color bg2
 color bg3
 color bg4
 color bg5
+color bg6
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark

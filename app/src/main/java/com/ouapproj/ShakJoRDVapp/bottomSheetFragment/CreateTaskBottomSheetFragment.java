@@ -17,6 +17,8 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
+import android.os.Handler;
+import android.os.Looper;
 import android.preference.PreferenceManager;
 import android.provider.ContactsContract;
 import android.view.MotionEvent;
@@ -44,6 +46,8 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Objects;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -51,6 +55,7 @@ import butterknife.Unbinder;
 
 import static android.app.Activity.RESULT_OK;
 import static android.content.Context.ALARM_SERVICE;
+import static android.content.Context.NOTIFICATION_SERVICE;
 import static androidx.core.content.ContextCompat.getSystemService;
 
 public class CreateTaskBottomSheetFragment extends BottomSheetDialogFragment {
@@ -82,6 +87,11 @@ public class CreateTaskBottomSheetFragment extends BottomSheetDialogFragment {
     MainActivity activity;
     public static int count = 0;
 
+    public long delay =5000;
+
+    private Calendar calendar;
+    private PendingIntent pendingIntent;
+
     private BottomSheetBehavior.BottomSheetCallback mBottomSheetBehaviorCallback = new BottomSheetBehavior.BottomSheetCallback() {
 
         @Override
@@ -104,7 +114,7 @@ public class CreateTaskBottomSheetFragment extends BottomSheetDialogFragment {
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
-    @SuppressLint({"RestrictedApi", "ClickableViewAccessibility"})
+    @SuppressLint({"RestrictedApi", "ClickableViewAccessibility", "SuspiciousIndentation"})
     @Override
     public void setupDialog(Dialog dialog, int style) {
         super.setupDialog(dialog, style);
@@ -272,7 +282,11 @@ public class CreateTaskBottomSheetFragment extends BottomSheetDialogFragment {
                 super.onPostExecute(aVoid);
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
 //                    createAnAlarm();
+
                     push();
+
+
+
                 }
                 setRefreshListener.refresh();
                 Toast.makeText(getActivity(), "Your event is been added", Toast.LENGTH_SHORT).show();
@@ -282,6 +296,71 @@ public class CreateTaskBottomSheetFragment extends BottomSheetDialogFragment {
         }
         saveTaskInBackend st = new saveTaskInBackend();
         st.execute();
+    }
+
+//    private void setAlarm() {
+//
+//        alarmManager = (AlarmManager) this.getActivity().getSystemService(getContext().ALARM_SERVICE);
+//
+//        Intent intent = new Intent(getContext(),AlarmReceiver.class);
+//
+//        pendingIntent = PendingIntent.getBroadcast(getContext(),0,intent,0);
+//
+//        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,calendar.getTimeInMillis(),
+//                10000,pendingIntent);
+//
+//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+//            alarmManager.set(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
+//        }
+//
+//
+//        Toast.makeText(getContext(), "Alarm set Successfully", Toast.LENGTH_SHORT).show();
+//
+//
+//
+//    }
+
+//    private void createNotificationChannel() {
+//
+//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+//            CharSequence name = "foxandroidReminderChannel";
+//            String description = "Channel For Alarm Manager";
+//            int importance = NotificationManager.IMPORTANCE_HIGH;
+//            NotificationChannel channel = new NotificationChannel("foxandroid",name,importance);
+//            channel.setDescription(description);
+//
+////            NotificationManager notificationManager = getSystemService(NotificationManager.class);
+//
+//            NotificationManager mNotificationManager =
+//                    (NotificationManager) this.getActivity().getSystemService(getContext().NOTIFICATION_SERVICE);
+//
+//            mNotificationManager.createNotificationChannel(channel);
+//
+//        }
+//
+//
+//    }
+
+
+
+
+
+
+
+
+
+
+
+
+    public void timer(long delay){
+//        new Timer().schedule(new TimerTask() {
+//            @Override
+//            public void run() {
+//                push();
+//            }
+//        }, 0);
+
+//        cal.getTimeInMillis()-cur_cal.getTimeInMillis()-delay
     }
 
     @RequiresApi(api = Build.VERSION_CODES.M)
@@ -311,26 +390,28 @@ public class CreateTaskBottomSheetFragment extends BottomSheetDialogFragment {
             alarmIntent.putExtra("DESC", addTaskDescription.getText().toString());
             alarmIntent.putExtra("DATE", taskDate.getText().toString());
             alarmIntent.putExtra("TIME", taskTime.getText().toString());
-            PendingIntent pendingIntent = PendingIntent.getBroadcast(activity,count, alarmIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                alarmManager.setAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), pendingIntent);
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-                    alarmManager.setExact(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), pendingIntent);
-                } else {
-                    alarmManager.set(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), pendingIntent);
-                }
-                count ++;
 
-                    PendingIntent intent = PendingIntent.getBroadcast(activity, count, alarmIntent, 0);
-                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                        alarmManager.setAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis() - 600000, intent);
-                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-                            alarmManager.setExact(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis() - 600000, intent);
-                        } else {
-                            alarmManager.set(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis() - 600000, intent);
-                        }
-                    }
-                count ++;
+            //PendingIntent pendingIntent = PendingIntent.getBroadcast(activity,count, alarmIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+//                alarmManager.setAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), pendingIntent);
+//                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+//                    alarmManager.setExact(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), pendingIntent);
+//                } else {
+//                    alarmManager.set(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), pendingIntent);
+//                }
+//                count ++;
+                PendingIntent intent = PendingIntent.getBroadcast(activity, count, alarmIntent, 0);
+                alarmManager.setExact(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis() - 120000, intent);
+
+//                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+//                        alarmManager.setAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis() - 5000, intent);
+//                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+//                            alarmManager.setExact(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis() - 5000, intent);
+//                        } else {
+//                            alarmManager.set(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis() - 5000, intent);
+//                        }
+//                    }
+//                count ++;
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -338,11 +419,31 @@ public class CreateTaskBottomSheetFragment extends BottomSheetDialogFragment {
     }
 
     public void push(){
-        NotificationManager mNotificationManager =
-                (NotificationManager) getActivity().getSystemService(getActivity().NOTIFICATION_SERVICE);
 
-        NotificationManagerCompat notificationManagerCompat;
-        Notification notification;
+        String[] items1 = taskDate.getText().toString().split("-");
+        String dd = items1[0];
+        String month = items1[1];
+        String year = items1[2];
+
+        String[] itemTime = taskTime.getText().toString().split(":");
+        String hour = itemTime[0];
+        String min = itemTime[1];
+
+        Calendar cur_cal = new GregorianCalendar();
+        cur_cal.setTimeInMillis(System.currentTimeMillis());
+
+        Calendar cal = new GregorianCalendar();
+        cal.set(Calendar.HOUR_OF_DAY, Integer.parseInt(hour));
+        cal.set(Calendar.MINUTE, Integer.parseInt(min));
+        cal.set(Calendar.SECOND, 0);
+        cal.set(Calendar.MILLISECOND, 0);
+        cal.set(Calendar.DATE, Integer.parseInt(dd));
+
+        NotificationManager mNotificationManager =
+                (NotificationManager) this.getActivity().getSystemService(getContext().NOTIFICATION_SERVICE);
+
+        final NotificationManagerCompat[] notificationManagerCompat = new NotificationManagerCompat[1];
+        final Notification[] notification = new Notification[1];
 
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
 
@@ -353,16 +454,33 @@ public class CreateTaskBottomSheetFragment extends BottomSheetDialogFragment {
             mNotificationManager.createNotificationChannel(channel);
         }
 
+        Intent notifIntent = new Intent(super.getContext(),MainActivity.class);
+        PendingIntent pendingIntent = PendingIntent.getActivity(super.getContext(),1,notifIntent,PendingIntent.FLAG_UPDATE_CURRENT);
         NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(super.getContext(), "YOUR_CHANNEL_ID")
-                .setSmallIcon(R.drawable.notif_bell) // notification icon
-                .setContentTitle("Meeting Alert !") // title for notification
-                .setContentText("You have a meeting. Click me to know more.")// message for notification
-                .setAutoCancel(true); // clear notification after click
+                .setSmallIcon(R.drawable.notif_bell)
+                .setContentTitle("Meeting Reminder !")
+                .setContentText("You have a meeting at "+taskTime.getText().toString()+" with "+taskEvent.getText().toString())// message for notification
+                .setAutoCancel(true)
+                .setContentIntent(pendingIntent);
 
-        notification = mBuilder.build();
-        notificationManagerCompat = NotificationManagerCompat.from(super.getContext());
 
-        notificationManagerCompat.notify(1,notification);
+        final Handler handler = new Handler();
+        Timer t = new Timer();
+        t.schedule(new TimerTask() {
+            public void run() {
+                handler.post(new Runnable() {
+                    public void run() {
+                        notification[0] = mBuilder.build();
+                        notificationManagerCompat[0] = NotificationManagerCompat.from(activity.getBaseContext());
+
+                        notificationManagerCompat[0].notify(1, notification[0]);
+                    }
+                });
+            }
+        }, cal.getTimeInMillis()-cur_cal.getTimeInMillis()-120000 );
+
+
+
     }
 
     private void showTaskFromId() {

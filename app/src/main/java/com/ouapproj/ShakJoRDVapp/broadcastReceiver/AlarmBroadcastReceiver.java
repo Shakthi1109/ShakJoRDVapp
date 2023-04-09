@@ -43,5 +43,8 @@ public class AlarmBroadcastReceiver extends BroadcastReceiver {
         i.putExtra("TIME", time);
         i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         context.startActivity(i);
+
+
+
     }
 }

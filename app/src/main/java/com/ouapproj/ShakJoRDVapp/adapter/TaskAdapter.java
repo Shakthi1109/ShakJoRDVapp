@@ -70,8 +70,14 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder
         Task task = taskList.get(position);
 
         String temp = task.getEvent();
-        String tempName = temp.split(":")[0];
-        String tempNum = temp.split(":")[1];
+        String tempName,tempNum ="";
+        if(temp.length()>1) {
+            tempName = temp.split(":")[0];
+            tempNum = temp.split(":")[1];
+        }else{
+            tempName=temp;
+            tempNum="0";
+        }
         String location = task.getTaskDescrption();
 
         holder.title.setText(task.getTaskTitle());
@@ -80,10 +86,11 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder
         holder.status.setText(task.isComplete() ? "COMPLETED" : "UPCOMING");
         holder.event.setText(tempName);
         holder.options.setOnClickListener(view -> showPopUpMenu(view, position));
+        String finalTempNum = tempNum;
         holder.phoneImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                callPhone(tempNum);
+                callPhone(finalTempNum);
             }
 
         });
@@ -97,6 +104,7 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder
             }
         });
 
+        String finalTempNum1 = tempNum;
         holder.shareImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -106,7 +114,7 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder
                         "Time: "+task.getLastAlarm()+"h"+"\r\n"+
                         "Location: "+location+"\r\n"+
                         "Person: "+tempName+"\r\n"+
-                        "Contact: "+tempNum+"\r\n\r\n"+
+                        "Contact: "+ finalTempNum1 +"\r\n\r\n"+
                         "Download ShakJoRDVapp to never forget your meetings :)";
                 Intent shareIntent = new Intent();
                 shareIntent.setAction(Intent.ACTION_SEND);

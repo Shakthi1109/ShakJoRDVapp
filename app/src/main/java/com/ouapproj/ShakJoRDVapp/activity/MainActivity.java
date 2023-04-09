@@ -1,17 +1,22 @@
 package com.ouapproj.ShakJoRDVapp.activity;
 
+import android.Manifest;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.media.MediaPlayer;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import androidx.annotation.RequiresApi;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -56,10 +61,11 @@ public class MainActivity extends BaseActivity implements CreateTaskBottomSheetF
     MediaPlayer mediaPlayer;
 
     private final int[] colors = {R.color.bg1, android.R.color.holo_green_light,
-            android.R.color.holo_orange_light, R.color.bg2,R.color.bg3,R.color.bg4};
+            android.R.color.holo_orange_light, R.color.bg2,R.color.bg3,R.color.bg4, R.color.bg6};
 
     private int currentColorIndex = 0;
 
+    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -71,6 +77,12 @@ public class MainActivity extends BaseActivity implements CreateTaskBottomSheetF
         PackageManager pm = getPackageManager();
         pm.setComponentEnabledSetting(receiver, PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
         Glide.with(getApplicationContext()).load(R.drawable.first_note).into(noDataImage);
+
+//        int permissionCheck = ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_NOTIFICATION_POLICY);
+//
+//        if(permissionCheck != PackageManager.PERMISSION_GRANTED){
+//            requestPermissions(new String[]{Manifest.permission.ACCESS_NOTIFICATION_POLICY},81);
+//        }
 
         addTask.setOnClickListener(view -> {
             CreateTaskBottomSheetFragment createTaskBottomSheetFragment = new CreateTaskBottomSheetFragment();
