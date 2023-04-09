@@ -76,7 +76,7 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder
 
         holder.title.setText(task.getTaskTitle());
         holder.description.setText(task.getTaskDescrption());
-        holder.time.setText(task.getLastAlarm());
+        holder.time.setText(task.getLastAlarm()+"h");
         holder.status.setText(task.isComplete() ? "COMPLETED" : "UPCOMING");
         holder.event.setText(tempName);
         holder.options.setOnClickListener(view -> showPopUpMenu(view, position));
@@ -93,6 +93,29 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder
             public void onClick(View v) {
                 Uri uri = Uri.parse("geo:0, 0?q="+location);
                 callMap(uri);
+
+            }
+        });
+
+        holder.shareImg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String msg = "MEETING REMINDER: \r\nHello, you have a meeting:\r\n"+
+                        "Desc: "+task.getTaskTitle()+"\r\n"+
+                        "Date: "+task.getDate()+"\r\n"+
+                        "Time: "+task.getLastAlarm()+"h"+"\r\n"+
+                        "Location: "+location+"\r\n"+
+                        "Person: "+tempName+"\r\n"+
+                        "Contact: "+tempNum+"\r\n\r\n"+
+                        "Download ShakJoRDVapp to never forget your meetings :)";
+                Intent shareIntent = new Intent();
+                shareIntent.setAction(Intent.ACTION_SEND);
+                shareIntent.putExtra(Intent.EXTRA_TEXT, msg);
+                shareIntent.setType("text/plain");
+
+                if(shareIntent.resolveActivity(context.getPackageManager()) != null){
+                    context.startActivity(shareIntent);
+                }
 
             }
         });
@@ -242,6 +265,9 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder
 
         @BindView(R.id.mapImg)
         ImageView mapImg;
+
+        @BindView(R.id.shareImg)
+        ImageView shareImg;
         @BindView(R.id.time)
         TextView time;
 

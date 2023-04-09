@@ -145,6 +145,20 @@
                     android:background="@drawable/map2"
                     android:layout_gravity="left" />
 
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/white1"
+                    android:background="@drawable/white"/>
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/shareImg"
+                    android:background="@drawable/share3"/>
+
+
             </LinearLayout>
 
             <LinearLayout
