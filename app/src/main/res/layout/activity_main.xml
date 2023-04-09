@@ -8,7 +8,8 @@
     android:orientation="vertical"
     android:background="@color/colorPrimary"
     android:paddingLeft="20dp"
-    tools:context=".activity.MainActivity">
+    tools:context=".activity.MainActivity"
+    android:id="@+id/appbg">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -24,20 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_gravity="left|bottom"
-            android:background="@drawable/barimg"
-            android:id="@+id/menuImg"/>
-
-        <ImageView
-            android:layout_width="15dp"
-            android:layout_height="30dp"
-            android:layout_gravity="right|center"
-            android:background="@drawable/white"
-            android:id="@+id/white2"/>
-   <TextView
+        <TextView
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:text="Hello"
@@ -47,11 +35,34 @@
        android:textSize="20sp"/>
 
         <ImageView
-            android:layout_width="30dp"
+            android:id="@+id/paint"
+            android:layout_width="29dp"
             android:layout_height="30dp"
             android:layout_gravity="right|bottom"
-            android:background="@drawable/calendar"
-            android:id="@+id/calendar"/>
+            android:background="@drawable/paint" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right|bottom"
+            android:background="@drawable/white" />
+        <ImageView
+            android:id="@+id/mic"
+            android:layout_width="29dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right|bottom"
+            android:background="@drawable/mute" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right|bottom"
+            android:background="@drawable/white" />
+
+        <ImageView
+            android:id="@+id/calendar"
+            android:layout_width="29dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right|bottom"
+            android:background="@drawable/calendar" />
     </LinearLayout>
 
 

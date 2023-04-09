@@ -641,6 +641,10 @@ color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
 color background_material_light
+color bg1
+color bg2
+color bg3
+color bg4
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -1101,9 +1105,11 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable map2
+drawable mic
 drawable more2
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
+drawable mute
 drawable navigation_empty_icon
 drawable notification_action_background
 drawable notification_bg
@@ -1117,6 +1123,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable paint
 drawable phone4
 drawable share3
 drawable tooltip_frame_dark
@@ -1189,6 +1196,7 @@ id addTaskTitle
 id alertTitle
 id all
 id always
+id appbg
 id async
 id auto
 id back
@@ -1288,9 +1296,9 @@ id masked
 id media_actions
 id menuComplete
 id menuDelete
-id menuImg
 id menuUpdate
 id message
+id mic
 id middle
 id mini
 id mondayLabel
@@ -1313,6 +1321,7 @@ id one_day_picker
 id options
 id outline
 id packed
+id paint
 id parallax
 id parent
 id parentPanel
@@ -1426,7 +1435,6 @@ id visible
 id wednesdayLabel
 id white
 id white1
-id white2
 id withText
 id wrap
 id wrap_content
@@ -1535,6 +1543,7 @@ menu menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 raw notification
+raw thankme
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

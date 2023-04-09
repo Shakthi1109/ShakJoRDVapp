@@ -1,12 +1,15 @@
 package com.ouapproj.ShakJoRDVapp.activity;
 
 import android.content.ComponentName;
+import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.media.MediaPlayer;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -40,8 +43,23 @@ public class MainActivity extends BaseActivity implements CreateTaskBottomSheetF
     @BindView(R.id.calendar)
     ImageView calendar;
 
-    @BindView(R.id.menuImg)
-    ImageView menuImg;
+    @BindView(R.id.mic)
+    ImageView mic;
+
+    @BindView(R.id.paint)
+    ImageView paint;
+
+    @BindView(R.id.appbg)
+    LinearLayout appbg;
+
+
+    private boolean isResume;
+    MediaPlayer mediaPlayer;
+
+    private final int[] colors = {R.color.bg1, android.R.color.holo_green_light,
+            android.R.color.holo_orange_light, R.color.bg2,R.color.bg3,R.color.bg4};
+
+    private int currentColorIndex = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,7 +86,57 @@ public class MainActivity extends BaseActivity implements CreateTaskBottomSheetF
             showCalendarViewBottomSheet.show(getSupportFragmentManager(), showCalendarViewBottomSheet.getTag());
         });
 
-//        menuImg.setOnClickListener();
+        mediaPlayer = MediaPlayer.create(getApplicationContext(),R.raw.thankme);
+        mediaPlayer.setLooping(true);
+
+
+
+        mic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!isResume){
+                    isResume=true;
+                    mic.setImageDrawable(getResources().getDrawable(R.drawable.mic));
+                    mediaPlayer.start();
+
+                }
+                else{
+                    isResume=false;
+                    mic.setImageDrawable(getResources().getDrawable(R.drawable.mute));
+                    mediaPlayer.pause();
+
+                }
+            }
+        });
+
+        paint.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                currentColorIndex = (currentColorIndex + 1) % colors.length;
+
+                // Get the current color
+                int colorResId = colors[currentColorIndex];
+                appbg.setBackgroundResource(colorResId);
+            }
+        });
+
+
+//      for LANG FR & ENG
+//        mic.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if(!isResume){
+//                    isResume=true;
+//                    mic.setImageDrawable(getResources().getDrawable(R.drawable.mic));
+//
+//                }
+//                else{
+//                    isResume=false;
+//                    mic.setImageDrawable(getResources().getDrawable(R.drawable.mute));
+//
+//                }
+//            }
+//        });
     }
 
     public void setUpAdapter() {
