@@ -2,13 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ouapproj.ShakJoRDVapp">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
-    <uses-permission android:name="android.permission.READ_CONTACTS"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-
-
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
         android:name="com.ouapproj.ShakJoRDVapp.AppController"
@@ -18,8 +18,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.ouapproj.ShakJoRDVapp.activity.AlarmActivity"></activity>
-        <activity android:name="com.ouapproj.ShakJoRDVapp.activity.MainActivity">
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:exported="false" />
+        <activity android:name=".activity.AlarmActivity" />
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,20 +30,20 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name="com.ouapproj.ShakJoRDVapp.broadcastReceiver.AlarmBroadcastReceiver"
+        <receiver
+            android:name="com.ouapproj.ShakJoRDVapp.broadcastReceiver.AlarmBroadcastReceiver"
             android:enabled="false">
             <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
 
-        <service android:name="com.ouapproj.ShakJoRDVapp.broadcastReceiver.AlarmService"
+        <uses-library android:name="com.google.android.maps" />
+
+        <service
+            android:name="com.ouapproj.ShakJoRDVapp.broadcastReceiver.AlarmService"
             android:enabled="true"
-            android:exported="true"/>
-
+            android:exported="true" />
     </application>
-
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
 </manifest>

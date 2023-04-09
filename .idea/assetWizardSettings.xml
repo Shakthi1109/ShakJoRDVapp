@@ -18,7 +18,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/D:/Program%20Files/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/menu/baseline_menu_24.xml" />
+                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/doorbell/baseline_doorbell_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -28,8 +28,8 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="color" value="6c86fa" />
-                            <entry key="outputName" value="baseline_menu_24" />
+                            <entry key="color" value="596cfd" />
+                            <entry key="outputName" value="notif_bell" />
                             <entry key="sourceFile" value="D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp" />
                           </map>
                         </option>

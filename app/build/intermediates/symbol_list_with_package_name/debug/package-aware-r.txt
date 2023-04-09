@@ -645,6 +645,7 @@ color bg1
 color bg2
 color bg3
 color bg4
+color bg5
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -1111,6 +1112,7 @@ drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable mute
 drawable navigation_empty_icon
+drawable notif_bell
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -1124,7 +1126,9 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable paint
+drawable paint_xml
 drawable phone4
+drawable settings_bg
 drawable share3
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -1399,7 +1403,14 @@ id taskEvent
 id taskRecycler
 id taskTime
 id text
+id text10sec
+id text1day
+id text1hr
+id text1week
 id text2
+id text30mins
+id text5sec
+id textSettings
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
@@ -1494,6 +1505,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_alarm
 layout activity_main
+layout activity_settings
 layout calendar_view
 layout calendar_view_day
 layout calendar_view_grid

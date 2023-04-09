@@ -5,8 +5,12 @@ import android.annotation.SuppressLint;
 import android.app.AlarmManager;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
+import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.TimePickerDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
@@ -24,6 +28,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentActivity;
 
@@ -45,10 +51,9 @@ import butterknife.Unbinder;
 
 import static android.app.Activity.RESULT_OK;
 import static android.content.Context.ALARM_SERVICE;
+import static androidx.core.content.ContextCompat.getSystemService;
 
 public class CreateTaskBottomSheetFragment extends BottomSheetDialogFragment {
-
-
 
     private static final int RESULT_PICK_CONTACT = 1;
     Unbinder unbinder;
@@ -216,20 +221,12 @@ public class CreateTaskBottomSheetFragment extends BottomSheetDialogFragment {
             Toast.makeText(activity, "Please enter a valid title", Toast.LENGTH_SHORT).show();
             return false;
         }
-        else if(addTaskDescription.getText().toString().equalsIgnoreCase("")) {
-            Toast.makeText(activity, "Please enter a valid description", Toast.LENGTH_SHORT).show();
-            return false;
-        }
         else if(taskDate.getText().toString().equalsIgnoreCase("")) {
             Toast.makeText(activity, "Please enter date", Toast.LENGTH_SHORT).show();
             return false;
         }
         else if(taskTime.getText().toString().equalsIgnoreCase("")) {
             Toast.makeText(activity, "Please enter time", Toast.LENGTH_SHORT).show();
-            return false;
-        }
-        else if(taskEvent.getText().toString().equalsIgnoreCase("")) {
-            Toast.makeText(activity, "Please enter an event", Toast.LENGTH_SHORT).show();
             return false;
         }
         else {
@@ -274,7 +271,8 @@ public class CreateTaskBottomSheetFragment extends BottomSheetDialogFragment {
             protected void onPostExecute(Void aVoid) {
                 super.onPostExecute(aVoid);
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                    createAnAlarm();
+//                    createAnAlarm();
+                    push();
                 }
                 setRefreshListener.refresh();
                 Toast.makeText(getActivity(), "Your event is been added", Toast.LENGTH_SHORT).show();
@@ -337,6 +335,34 @@ public class CreateTaskBottomSheetFragment extends BottomSheetDialogFragment {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public void push(){
+        NotificationManager mNotificationManager =
+                (NotificationManager) getActivity().getSystemService(getActivity().NOTIFICATION_SERVICE);
+
+        NotificationManagerCompat notificationManagerCompat;
+        Notification notification;
+
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+
+            NotificationChannel channel = new NotificationChannel("YOUR_CHANNEL_ID",
+                    "YOUR_CHANNEL_NAME", NotificationManager.IMPORTANCE_DEFAULT);
+
+            channel.setDescription("YOUR_NOTIFICATION_CHANNEL_DESCRIPTION");
+            mNotificationManager.createNotificationChannel(channel);
+        }
+
+        NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(super.getContext(), "YOUR_CHANNEL_ID")
+                .setSmallIcon(R.drawable.notif_bell) // notification icon
+                .setContentTitle("Meeting Alert !") // title for notification
+                .setContentText("You have a meeting. Click me to know more.")// message for notification
+                .setAutoCancel(true); // clear notification after click
+
+        notification = mBuilder.build();
+        notificationManagerCompat = NotificationManagerCompat.from(super.getContext());
+
+        notificationManagerCompat.notify(1,notification);
     }
 
     private void showTaskFromId() {

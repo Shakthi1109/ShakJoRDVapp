@@ -27,6 +27,9 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.ouapproj.ShakJoRDVapp.activity.SettingsActivity"
+            android:exported="false" />
         <activity android:name="com.ouapproj.ShakJoRDVapp.activity.AlarmActivity" />
         <activity android:name="com.ouapproj.ShakJoRDVapp.activity.MainActivity" >
             <intent-filter>
@@ -43,6 +46,8 @@
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
+
+        <uses-library android:name="com.google.android.maps" />
 
         <service
             android:name="com.ouapproj.ShakJoRDVapp.broadcastReceiver.AlarmService"

@@ -19,7 +19,6 @@ import com.bumptech.glide.Glide;
 import com.ouapproj.ShakJoRDVapp.R;
 import com.ouapproj.ShakJoRDVapp.adapter.TaskAdapter;
 import com.ouapproj.ShakJoRDVapp.bottomSheetFragment.CreateTaskBottomSheetFragment;
-import com.ouapproj.ShakJoRDVapp.bottomSheetFragment.ShowCalendarViewBottomSheet;
 import com.ouapproj.ShakJoRDVapp.broadcastReceiver.AlarmBroadcastReceiver;
 import com.ouapproj.ShakJoRDVapp.database.DatabaseClient;
 import com.ouapproj.ShakJoRDVapp.model.Task;
@@ -82,8 +81,11 @@ public class MainActivity extends BaseActivity implements CreateTaskBottomSheetF
         getSavedTasks();
 
         calendar.setOnClickListener(view -> {
-            ShowCalendarViewBottomSheet showCalendarViewBottomSheet = new ShowCalendarViewBottomSheet();
-            showCalendarViewBottomSheet.show(getSupportFragmentManager(), showCalendarViewBottomSheet.getTag());
+//            ShowCalendarViewBottomSheet showCalendarViewBottomSheet = new ShowCalendarViewBottomSheet();
+//            showCalendarViewBottomSheet.show(getSupportFragmentManager(), showCalendarViewBottomSheet.getTag());
+
+            Intent in = new Intent(getApplicationContext(), SettingsActivity.class);
+            startActivity(in);
         });
 
         mediaPlayer = MediaPlayer.create(getApplicationContext(),R.raw.thankme);

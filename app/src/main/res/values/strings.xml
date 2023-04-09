@@ -7,6 +7,6 @@
     <string name="confirmation">Completed the task!..</string>
     <string name="sureToMarkAsComplete">Are you sure you want to mark this task as completed.</string>
     <string name="congrats_you_have_completed_the_task_successfully">Congrats!... You have completed the task successfully..</string>
-<!-- TODO: Remove or change this placeholder text -->
+    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

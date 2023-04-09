@@ -3,7 +3,12 @@ package com.ouapproj.ShakJoRDVapp.broadcastReceiver;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.widget.Toast;
 
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
+
+import com.ouapproj.ShakJoRDVapp.R;
 import com.ouapproj.ShakJoRDVapp.activity.AlarmActivity;
 
 public class AlarmBroadcastReceiver extends BroadcastReceiver {
@@ -21,15 +26,15 @@ public class AlarmBroadcastReceiver extends BroadcastReceiver {
 //            Toast.makeText(context, "Alarm just rang...", Toast.LENGTH_SHORT).show();
 //        }
 
-//        NotificationCompat.Builder notification = new NotificationCompat.Builder(context, "123")
-//                .setSmallIcon(R.mipmap.ic_launcher)
-//                .setContentTitle("Name")
-//                .setContentText("Name")
-//                .setPriority(NotificationCompat.PRIORITY_HIGH);
-//
-//        NotificationManagerCompat notificationManagerCompat = NotificationManagerCompat.from(context);
-//        notificationManagerCompat.notify(200, notification.build());
-//        Toast.makeText(context, "Broadcast receiver called", Toast.LENGTH_SHORT).show();
+        NotificationCompat.Builder notification = new NotificationCompat.Builder(context, "123")
+                .setSmallIcon(R.mipmap.ic_launcher)
+                .setContentTitle("Name")
+                .setContentText("Name")
+                .setPriority(NotificationCompat.PRIORITY_HIGH);
+
+        NotificationManagerCompat notificationManagerCompat = NotificationManagerCompat.from(context);
+        notificationManagerCompat.notify(200, notification.build());
+        Toast.makeText(context, "Broadcast receiver called", Toast.LENGTH_SHORT).show();
 
         Intent i = new Intent(context, AlarmActivity.class);
         i.putExtra("TITLE", title);
