@@ -29,6 +29,7 @@ public class MainActivity_ViewBinding implements Unbinder {
     target.addTask = Utils.findRequiredViewAsType(source, R.id.addTask, "field 'addTask'", TextView.class);
     target.noDataImage = Utils.findRequiredViewAsType(source, R.id.noDataImage, "field 'noDataImage'", ImageView.class);
     target.calendar = Utils.findRequiredViewAsType(source, R.id.calendar, "field 'calendar'", ImageView.class);
+    target.menuImg = Utils.findRequiredViewAsType(source, R.id.menuImg, "field 'menuImg'", ImageView.class);
   }
 
   @Override
@@ -42,5 +43,6 @@ public class MainActivity_ViewBinding implements Unbinder {
     target.addTask = null;
     target.noDataImage = null;
     target.calendar = null;
+    target.menuImg = null;
   }
 }

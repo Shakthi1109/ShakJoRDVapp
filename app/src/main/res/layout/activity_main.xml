@@ -14,18 +14,46 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left|bottom"
+            android:background="@drawable/barimg"
+            android:id="@+id/menuImg"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right|center"
+            android:background="@drawable/white"
+            android:id="@+id/white2"/>
    <TextView
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:text="Hello"
+       android:layout_weight="1"
        android:layout_marginTop="20dp"
        android:textColor="@color/colorAccent"
-       android:textSize="18sp"/>
+       android:textSize="20sp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right|bottom"
+            android:background="@drawable/calendar"
+            android:id="@+id/calendar"/>
+    </LinearLayout>
+
 
    <TextView
        android:layout_width="wrap_content"
@@ -38,13 +66,6 @@
        tools:ignore="MissingPrefix" />
 
         </LinearLayout>
-
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_gravity="right|center"
-            android:background="@drawable/calendar"
-            android:id="@+id/calendar"/>
 
     </FrameLayout>
 

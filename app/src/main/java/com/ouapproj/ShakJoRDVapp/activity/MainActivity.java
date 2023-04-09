@@ -40,6 +40,9 @@ public class MainActivity extends BaseActivity implements CreateTaskBottomSheetF
     @BindView(R.id.calendar)
     ImageView calendar;
 
+    @BindView(R.id.menuImg)
+    ImageView menuImg;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,6 +67,8 @@ public class MainActivity extends BaseActivity implements CreateTaskBottomSheetF
             ShowCalendarViewBottomSheet showCalendarViewBottomSheet = new ShowCalendarViewBottomSheet();
             showCalendarViewBottomSheet.show(getSupportFragmentManager(), showCalendarViewBottomSheet.getTag());
         });
+
+//        menuImg.setOnClickListener();
     }
 
     public void setUpAdapter() {

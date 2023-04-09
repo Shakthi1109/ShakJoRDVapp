@@ -1,4 +1,4 @@
-#Sun Apr 09 02:59:24 CEST 2023
+#Sun Apr 09 04:48:44 CEST 2023
 base.0=D\:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
