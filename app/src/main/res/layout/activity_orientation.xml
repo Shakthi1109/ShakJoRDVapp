@@ -2,25 +2,37 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity.Orientation">
 
+
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginLeft="100dp"
-        android:padding="16dp"
-        android:paddingHorizontal="20dp">
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="80dp">
 
         <TextView
             fontPath="fonts/nunito_extra_bold.ttf"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Task Title:"
+            android:text="@string/meeting_details"
+            android:layout_marginLeft="25dp"
             android:textColor="@color/colorAccent"
-            android:textSize="28sp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="MissingPrefix" />
+
+        <TextView
+            fontPath="fonts/nunito_extra_bold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/desc"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="22sp"
             android:textStyle="bold"
             tools:ignore="MissingPrefix" />
 
@@ -31,7 +43,7 @@
             android:layout_height="wrap_content"
             android:text="@string/task_title_placeholder"
             android:textColor="@color/colorAccent"
-            android:textSize="28sp"
+            android:textSize="22sp"
             android:textStyle="bold"
             tools:ignore="MissingPrefix" />
 
@@ -39,9 +51,10 @@
             fontPath="fonts/nunito_extra_bold.ttf"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Date:"
+            android:text="@string/date"
+            android:layout_marginTop="20dp"
             android:textColor="@color/colorAccent"
-            android:textSize="28sp"
+            android:textSize="22sp"
             android:textStyle="bold"
             tools:ignore="MissingPrefix" />
 
@@ -52,7 +65,7 @@
             android:layout_height="wrap_content"
             android:text="@string/date_placeholder"
             android:textColor="@color/colorAccent"
-            android:textSize="28sp"
+            android:textSize="22sp"
             android:textStyle="bold"
             tools:ignore="MissingPrefix" />
 
@@ -60,9 +73,10 @@
             fontPath="fonts/nunito_extra_bold.ttf"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Time:"
+            android:text="@string/time"
+            android:layout_marginTop="20dp"
             android:textColor="@color/colorAccent"
-            android:textSize="28sp"
+            android:textSize="22sp"
             android:textStyle="bold"
             tools:ignore="MissingPrefix" />
 
@@ -73,7 +87,7 @@
             android:layout_height="wrap_content"
             android:text="@string/time_placeholder"
             android:textColor="@color/colorAccent"
-            android:textSize="28sp"
+            android:textSize="22sp"
             android:textStyle="bold"
             tools:ignore="MissingPrefix" />
 
@@ -81,9 +95,10 @@
             fontPath="fonts/nunito_extra_bold.ttf"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Location:"
+            android:text="@string/location"
+            android:layout_marginTop="20dp"
             android:textColor="@color/colorAccent"
-            android:textSize="28sp"
+            android:textSize="22sp"
             android:textStyle="bold"
             tools:ignore="MissingPrefix" />
 
@@ -94,7 +109,7 @@
             android:layout_height="wrap_content"
             android:text="@string/location_placeholder"
             android:textColor="@color/colorAccent"
-            android:textSize="28sp"
+            android:textSize="22sp"
             android:textStyle="bold"
             tools:ignore="MissingPrefix" />
 
@@ -102,9 +117,10 @@
             fontPath="fonts/nunito_extra_bold.ttf"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Person:"
+            android:text="@string/person"
+            android:layout_marginTop="20dp"
             android:textColor="@color/colorAccent"
-            android:textSize="28sp"
+            android:textSize="22sp"
             android:textStyle="bold"
             tools:ignore="MissingPrefix" />
 
@@ -115,7 +131,7 @@
             android:layout_height="wrap_content"
             android:text="@string/person_placeholder"
             android:textColor="@color/colorAccent"
-            android:textSize="28sp"
+            android:textSize="22sp"
             android:textStyle="bold"
             tools:ignore="MissingPrefix" />
 
@@ -123,9 +139,10 @@
             fontPath="fonts/nunito_extra_bold.ttf"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Contact:"
+            android:text="@string/contact"
+            android:layout_marginTop="20dp"
             android:textColor="@color/colorAccent"
-            android:textSize="28sp"
+            android:textSize="22sp"
             android:textStyle="bold"
             tools:ignore="MissingPrefix" />
 
@@ -136,7 +153,7 @@
             android:layout_height="wrap_content"
             android:text="@string/contact_placeholder"
             android:textColor="@color/colorAccent"
-            android:textSize="28sp"
+            android:textSize="22sp"
             android:textStyle="bold"
             tools:ignore="MissingPrefix" />
 

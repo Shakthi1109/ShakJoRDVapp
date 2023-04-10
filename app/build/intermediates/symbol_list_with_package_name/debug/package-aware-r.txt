@@ -1607,6 +1607,7 @@ string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string addmeeting
 string address
+string alert_preferences
 string allmeetings
 string app_name
 string appbar_scrolling_view_behavior
@@ -1617,18 +1618,22 @@ string character_counter_pattern
 string completed
 string confirmation
 string congrats_you_have_completed_the_task_successfully
+string contact
 string contact_placeholder
 string contactperson
 string createmeetings
 string createnewmeeting
+string date
 string date_placeholder
 string delete_confirmation
+string desc
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string fillthedetailsbelowtoaddameeting
 string hello
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
+string location
 string location_placeholder
 string material_calendar_friday
 string material_calendar_monday
@@ -1640,6 +1645,7 @@ string material_calendar_thursday
 string material_calendar_today_button
 string material_calendar_tuesday
 string material_calendar_wednesday
+string meeting_details
 string meetingdate
 string meetingdescription
 string meetingtime
@@ -1650,6 +1656,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string person
 string person_placeholder
 string rate_us
 string search_menu_title
@@ -1657,6 +1664,7 @@ string status_bar_notification_info_overflow
 string sureToDelete
 string sureToMarkAsComplete
 string task_title_placeholder
+string time
 string time_placeholder
 string yes
 style AlertDialog_AppCompat

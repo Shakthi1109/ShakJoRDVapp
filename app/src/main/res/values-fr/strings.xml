@@ -28,11 +28,19 @@
     <string name="_2_days">2 jours</string>
     <string name="completed">COMPLETÉE</string>
     <string name="rate_us">Évaluez Nous</string>
-    <string name="big_letter">Cher utilisateur / Prof, \n\n Merci d\'utiliser notre application. \n\nVous pouvez apprécier nos efforts en donnant des notes complètes pour ce projet.</string>
+    <string name="big_letter">Cher utilisateur / Prof, \n\n Merci d\'utiliser notre application. \n\nVous pouvez apprécier nos efforts en donnant 5 étoiles dans PlayStore (non disponible) ou en donnant des notes complètes pour ce projet.</string>
     <string name="task_title_placeholder" />
     <string name="date_placeholder" />
     <string name="time_placeholder" />
     <string name="location_placeholder" />
     <string name="person_placeholder" />
     <string name="contact_placeholder" />
+    <string name="meeting_details">Détails du RDV :</string>
+    <string name="desc">Desc :</string>
+    <string name="date">Date :</string>
+    <string name="time">Heure :</string>
+    <string name="location">Localisation :</string>
+    <string name="person">Nom d\'une personne :</string>
+    <string name="contact">Numéro de contact :</string>
+    <string name="alert_preferences">Préférences d\'alerte</string>
 </resources>

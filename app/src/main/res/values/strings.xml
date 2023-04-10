@@ -1,12 +1,12 @@
 <resources>
     <string name="app_name">ShakJoRDVapp</string>
     <string name="delete_confirmation">Confirmation</string>
-    <string name="sureToDelete">Are you sure you want to delete the meeting</string>
+    <string name="sureToDelete">Are you sure you want to delete the meeting?</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
-    <string name="confirmation">Meeting completed!..</string>
-    <string name="sureToMarkAsComplete">Are you sure you want to mark this meeting as completed.</string>
-    <string name="congrats_you_have_completed_the_task_successfully">Great job... Meeting is completed</string>
+    <string name="confirmation">Completion</string>
+    <string name="sureToMarkAsComplete">Are you sure you want to mark this meeting as completed?</string>
+    <string name="congrats_you_have_completed_the_task_successfully">Great job! Meeting is completed</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello">Hello</string>
@@ -28,11 +28,19 @@
     <string name="_2_days">2 days</string>
     <string name="completed">COMPLETED</string>
     <string name="rate_us">RATE US</string>
-    <string name="big_letter">Dear User/ Prof, \n\nThank you for using our application. \n\nYou can appreciate our efforts by giving full notes for this project.</string>
+    <string name="big_letter">Dear User/ Prof, \n\nThank you for using our application. \n\nYou can appreciate our efforts by giving 5 stars in PlayStore (not available) or by giving full notes for this project.</string>
     <string name="task_title_placeholder" />
     <string name="date_placeholder" />
     <string name="time_placeholder" />
     <string name="location_placeholder" />
     <string name="person_placeholder" />
     <string name="contact_placeholder" />
+    <string name="meeting_details">Meeting Details:</string>
+    <string name="desc">Desc:</string>
+    <string name="date">Date:</string>
+    <string name="time">Time:</string>
+    <string name="location">Location:</string>
+    <string name="person">Person name:</string>
+    <string name="contact">Contact Num:</string>
+    <string name="alert_preferences">Alert Preferences</string>
 </resources>

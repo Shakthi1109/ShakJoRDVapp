@@ -48,20 +48,20 @@
         "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable\\paint.png"
     },
     {
-        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
         "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_phone4.png.flat",
-        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable\\phone4.png"
+        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
         "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_orientation.xml.flat",
         "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\layout\\activity_orientation.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_phone4.png.flat",
+        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable\\phone4.png"
     },
     {
         "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_add_black_24dp.xml.flat",
