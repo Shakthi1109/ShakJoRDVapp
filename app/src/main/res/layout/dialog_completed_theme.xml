@@ -38,18 +38,16 @@
                 android:layout_gravity="center"
                 android:background="@drawable/correct"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/black"
-            android:textSize="16sp"
-            android:layout_marginTop="40dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:textAlignment="center"
-            android:text="@string/congrats_you_have_completed_the_task_successfully"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/congrats_you_have_completed_the_task_successfully"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
 
-        <Button
+            <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/closeButton"

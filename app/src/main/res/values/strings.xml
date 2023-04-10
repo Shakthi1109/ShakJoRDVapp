@@ -1,12 +1,31 @@
 <resources>
     <string name="app_name">ShakJoRDVapp</string>
     <string name="delete_confirmation">Confirmation</string>
-    <string name="sureToDelete">Are you sure you want to delete the task</string>
+    <string name="sureToDelete">Are you sure you want to delete the meeting</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
-    <string name="confirmation">Completed the task!..</string>
-    <string name="sureToMarkAsComplete">Are you sure you want to mark this task as completed.</string>
-    <string name="congrats_you_have_completed_the_task_successfully">Congrats!... You have completed the task successfully..</string>
+    <string name="confirmation">Meeting completed!..</string>
+    <string name="sureToMarkAsComplete">Are you sure you want to mark this meeting as completed.</string>
+    <string name="congrats_you_have_completed_the_task_successfully">Great job... Meeting is completed</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello">Hello</string>
+    <string name="allmeetings">All meetings</string>
+    <string name="createmeetings">Create meetings</string>
+    <string name="createnewmeeting">Create New Meeting</string>
+    <string name="fillthedetailsbelowtoaddameeting">Fill the details below to add a meeting</string>
+    <string name="meetingdescription">Meeting Description</string>
+    <string name="meetingdate">Meeting date</string>
+    <string name="meetingtime">Meeting time</string>
+    <string name="contactperson">Contact person</string>
+    <string name="address">Address</string>
+    <string name="addmeeting">ADD MEETING</string>
+    <string name="_2_mins">2 mins</string>
+    <string name="_3_mins">3 mins</string>
+    <string name="_30_mins">30 mins</string>
+    <string name="_1_hour">1 hour</string>
+    <string name="_1_day">1 day</string>
+    <string name="_2_days">2 days</string>
+    <string name="completed">COMPLETED</string>
+    <string name="rate_us">RATE US</string>
 </resources>

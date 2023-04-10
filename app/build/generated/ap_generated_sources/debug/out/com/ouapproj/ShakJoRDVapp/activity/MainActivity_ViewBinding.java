@@ -31,8 +31,11 @@ public class MainActivity_ViewBinding implements Unbinder {
     target.noDataImage = Utils.findRequiredViewAsType(source, R.id.noDataImage, "field 'noDataImage'", ImageView.class);
     target.calendar = Utils.findRequiredViewAsType(source, R.id.calendar, "field 'calendar'", ImageView.class);
     target.mic = Utils.findRequiredViewAsType(source, R.id.mic, "field 'mic'", ImageView.class);
+    target.flag = Utils.findRequiredViewAsType(source, R.id.flag, "field 'flag'", ImageView.class);
+    target.flag2 = Utils.findRequiredViewAsType(source, R.id.flag2, "field 'flag2'", ImageView.class);
     target.paint = Utils.findRequiredViewAsType(source, R.id.paint, "field 'paint'", ImageView.class);
     target.appbg = Utils.findRequiredViewAsType(source, R.id.appbg, "field 'appbg'", LinearLayout.class);
+    target.star = Utils.findRequiredViewAsType(source, R.id.star, "field 'star'", TextView.class);
   }
 
   @Override
@@ -47,7 +50,10 @@ public class MainActivity_ViewBinding implements Unbinder {
     target.noDataImage = null;
     target.calendar = null;
     target.mic = null;
+    target.flag = null;
+    target.flag2 = null;
     target.paint = null;
     target.appbg = null;
+    target.star = null;
   }
 }

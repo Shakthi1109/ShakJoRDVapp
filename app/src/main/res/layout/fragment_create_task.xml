@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
-            android:text="Create New Meeting"
+            android:text="@string/createnewmeeting"
             android:textColor="@android:color/black"
             android:textSize="22sp"
             tools:ignore="MissingPrefix" />
@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
-            android:text="Fill the details below to add a meeting"
+            android:text="@string/fillthedetailsbelowtoaddameeting"
             android:textAlignment="center"
             android:textColor="@android:color/black"
             android:alpha="0.8"
@@ -51,7 +51,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:text="Meeting Description"
+            android:text="@string/meetingdescription"
             tools:ignore="MissingPrefix" />
 
         <EditText
@@ -73,7 +73,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="Meeting date"
+        android:text="@string/meetingdate"
         tools:ignore="MissingPrefix" />
 
     <EditText
@@ -94,7 +94,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="Meeting time"
+        android:text="@string/meetingtime"
         tools:ignore="MissingPrefix" />
 
     <EditText
@@ -115,7 +115,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="Contact person"
+        android:text="@string/contactperson"
         tools:ignore="MissingPrefix" />
 
     <EditText
@@ -136,7 +136,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="Address"
+        android:text="@string/address"
         tools:ignore="MissingPrefix" />
 
     <EditText
@@ -156,7 +156,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/addTask"
-        android:text="Add Meeting"
+        android:text="@string/addmeeting"
         android:background="@drawable/btn_background"
         android:textColor="@color/colorPrimary"
         android:layout_marginTop="40dp" />

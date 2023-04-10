@@ -50,14 +50,23 @@ public class MainActivity extends BaseActivity implements CreateTaskBottomSheetF
     @BindView(R.id.mic)
     ImageView mic;
 
+    @BindView(R.id.flag)
+    ImageView flag;
+    @BindView(R.id.flag2)
+    ImageView flag2;
+
     @BindView(R.id.paint)
     ImageView paint;
 
     @BindView(R.id.appbg)
     LinearLayout appbg;
 
+    @BindView(R.id.star)
+    TextView star;
+
 
     private boolean isResume;
+    private boolean isEng;
     MediaPlayer mediaPlayer;
 
     private final int[] colors = {R.color.bg1, android.R.color.holo_green_light,
@@ -104,6 +113,15 @@ public class MainActivity extends BaseActivity implements CreateTaskBottomSheetF
         mediaPlayer.setLooping(true);
 
 
+        star.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in = new Intent(getApplicationContext(), RateUs.class);
+                startActivity(in);
+            }
+        });
+
+
 
         mic.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -134,23 +152,27 @@ public class MainActivity extends BaseActivity implements CreateTaskBottomSheetF
             }
         });
 
+        LanguageManager lang = new LanguageManager(this);
 
-//      for LANG FR & ENG
-//        mic.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                if(!isResume){
-//                    isResume=true;
-//                    mic.setImageDrawable(getResources().getDrawable(R.drawable.mic));
-//
-//                }
-//                else{
-//                    isResume=false;
-//                    mic.setImageDrawable(getResources().getDrawable(R.drawable.mute));
-//
-//                }
-//            }
-//        });
+        flag.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                    lang.updateResource("en");
+                    recreate();
+
+                }
+        });
+
+        flag2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                lang.updateResource("fr");
+                recreate();
+            }
+        });
+
+
+
     }
 
     public void setUpAdapter() {

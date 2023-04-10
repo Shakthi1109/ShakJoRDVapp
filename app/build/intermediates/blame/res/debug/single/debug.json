@@ -8,6 +8,86 @@
         "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
+        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mic.png.flat",
+        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable\\mic.png"
+    },
+    {
+        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\raw_thankme.mp3.flat",
+        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\raw\\thankme.mp3"
+    },
+    {
+        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_border.xml.flat",
+        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable\\btn_border.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_calendar.png.flat",
+        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable\\calendar.png"
+    },
+    {
+        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_alert.gif.flat",
+        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable\\alert.gif"
+    },
+    {
+        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_background.xml.flat",
+        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable\\btn_background.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_eng.png.flat",
+        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable\\eng.png"
+    },
+    {
+        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_task.xml.flat",
+        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\layout\\item_task.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_paint.png.flat",
+        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable\\paint.png"
+    },
+    {
+        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_phone4.png.flat",
+        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable\\phone4.png"
+    },
+    {
+        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_add_black_24dp.xml.flat",
+        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable\\ic_add_black_24dp.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_correct.png.flat",
+        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable\\correct.png"
+    },
+    {
+        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_share3.png.flat",
+        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable\\share3.png"
+    },
+    {
+        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_barimg.png.flat",
+        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable\\barimg.png"
+    },
+    {
+        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu.xml.flat",
+        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\menu\\menu.xml"
+    },
+    {
+        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_france.png.flat",
+        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable\\france.png"
+    },
+    {
         "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mute.png.flat",
         "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable\\mute.png"
     },
@@ -36,32 +116,20 @@
         "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_dot.png.flat",
-        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable\\dot.png"
+        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_rate_us.xml.flat",
+        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\layout\\activity_rate_us.xml"
     },
     {
-        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mic.png.flat",
-        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable\\mic.png"
+        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_dot.png.flat",
+        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable\\dot.png"
     },
     {
         "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
         "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_arrow_back_black_24dp.xml.flat",
         "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable\\ic_arrow_back_black_24dp.xml"
-    },
-    {
-        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\raw_thankme.mp3.flat",
-        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\raw\\thankme.mp3"
-    },
-    {
-        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_border.xml.flat",
-        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable\\btn_border.xml"
     },
     {
         "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
@@ -70,18 +138,6 @@
     {
         "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_calendar.png.flat",
-        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable\\calendar.png"
-    },
-    {
-        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_alert.gif.flat",
-        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable\\alert.gif"
-    },
-    {
-        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_background.xml.flat",
-        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable\\btn_background.xml"
     },
     {
         "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
@@ -96,24 +152,8 @@
         "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable\\settings_bg.xml"
     },
     {
-        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_task.xml.flat",
-        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\layout\\item_task.xml"
-    },
-    {
-        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_paint.png.flat",
-        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable\\paint.png"
-    },
-    {
         "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_paint_xml.xml.flat",
         "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable\\paint_xml.xml"
-    },
-    {
-        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
-        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
-    },
-    {
-        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
         "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_white.jpg.flat",
@@ -122,14 +162,6 @@
     {
         "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notif_bell.xml.flat",
         "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable\\notif_bell.xml"
-    },
-    {
-        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_phone4.png.flat",
-        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable\\phone4.png"
-    },
-    {
-        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_add_black_24dp.xml.flat",
-        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable\\ic_add_black_24dp.xml"
     },
     {
         "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_alarm.xml.flat",
@@ -144,14 +176,6 @@
         "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_correct.png.flat",
-        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable\\correct.png"
-    },
-    {
-        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_share3.png.flat",
-        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable\\share3.png"
-    },
-    {
         "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_map2.png.flat",
         "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable\\map2.png"
     },
@@ -160,23 +184,11 @@
         "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_barimg.png.flat",
-        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable\\barimg.png"
-    },
-    {
-        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu.xml.flat",
-        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\menu\\menu.xml"
-    },
-    {
         "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
         "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
-    },
-    {
-        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     }
 ]

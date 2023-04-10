@@ -30,6 +30,9 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
+            android:name="com.ouapproj.ShakJoRDVapp.activity.RateUs"
+            android:exported="false" />
+        <activity
             android:name="com.ouapproj.ShakJoRDVapp.activity.SettingsActivity"
             android:exported="false" />
         <activity android:name="com.ouapproj.ShakJoRDVapp.activity.AlarmActivity" />

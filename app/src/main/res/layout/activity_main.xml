@@ -24,15 +24,38 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
         <TextView
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="Hello"
-       android:layout_weight="1"
-       android:layout_marginTop="20dp"
-       android:textColor="@color/colorAccent"
-       android:textSize="20sp"/>
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/hello"
+           android:layout_weight="1"
+           android:id="@+id/star"
+           android:layout_marginTop="20dp"
+           android:textColor="@color/colorAccent"
+           android:textSize="20sp"/>
+
+        <ImageView
+            android:id="@+id/flag2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right|bottom"
+            android:background="@drawable/france" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right|bottom"
+            android:background="@drawable/white" />
+        <ImageView
+            android:id="@+id/flag"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right|bottom"
+            android:background="@drawable/eng" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right|bottom"
+            android:background="@drawable/white" />
 
         <ImageView
             android:id="@+id/paint"
@@ -69,7 +92,7 @@
    <TextView
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:text="All Meetings"
+       android:text="@string/allmeetings"
        fontPath="fonts/nunito_extra_bold.ttf"
        android:textStyle="bold"
        android:textColor="@color/colorAccent"
@@ -107,7 +130,7 @@
    <TextView
        android:layout_width="wrap_content"
        android:layout_height="70dp"
-       android:text="Create Meeting"
+       android:text="@string/createmeetings"
        android:drawablePadding="10dp"
        android:paddingTop="10dp"
        android:id="@+id/addTask"

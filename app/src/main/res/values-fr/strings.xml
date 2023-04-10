@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShakJoRDVapp</string>
+    <string name="delete_confirmation">Confirmation</string>
+    <string name="sureToDelete">Etes vous sur de vouloir supprimer le RDV?</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="confirmation">RDV complétée !</string>
+    <string name="sureToMarkAsComplete">Etes vous sur de rendre ce RDV complète?</string>
+    <string name="congrats_you_have_completed_the_task_successfully">Félicitations... Le RDV est complété</string>
+    <string name="hello_blank_fragment">Bonjour fragment vierge</string>
+    <string name="hello">Bonjour</string>
+    <string name="allmeetings">Tous les RDV</string>
+    <string name="createmeetings">Créer un RDV</string>
+    <string name="createnewmeeting">Créer un nouveau RDV</string>
+    <string name="fillthedetailsbelowtoaddameeting">Remplissez les informations ci-dessous pour créer un RDV</string>
+    <string name="meetingdescription">Détails du RDV</string>
+    <string name="meetingdate">Date du RDV</string>
+    <string name="meetingtime">Heure du RDV</string>
+    <string name="contactperson">Personne à contacter</string>
+    <string name="address">Adresse</string>
+    <string name="addmeeting">AJOUTER UN RDV</string>
+    <string name="_2_mins">2 mins</string>
+    <string name="_3_mins">3 mins</string>
+    <string name="_30_mins">30 mins</string>
+    <string name="_1_hour">1 hour</string>
+    <string name="_1_day">1 day</string>
+    <string name="_2_days">2 days</string>
+    <string name="completed">COMPLETED</string>
+    <string name="rate_us">RATE US</string>
+</resources>
