@@ -21,6 +21,7 @@ import android.os.Handler;
 import android.os.Looper;
 import android.preference.PreferenceManager;
 import android.provider.ContactsContract;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
@@ -33,7 +34,9 @@ import androidx.annotation.RequiresApi;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 import androidx.core.content.ContextCompat;
+import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.ouapproj.ShakJoRDVapp.R;
 import com.ouapproj.ShakJoRDVapp.activity.MainActivity;
@@ -59,6 +62,7 @@ import static android.content.Context.NOTIFICATION_SERVICE;
 import static androidx.core.content.ContextCompat.getSystemService;
 
 public class CreateTaskBottomSheetFragment extends BottomSheetDialogFragment {
+
 
     private static final int RESULT_PICK_CONTACT = 1;
     Unbinder unbinder;
@@ -87,7 +91,7 @@ public class CreateTaskBottomSheetFragment extends BottomSheetDialogFragment {
     MainActivity activity;
     public static int count = 0;
 
-    public long delay =5000;
+    public static long delay =120000;
 
     private Calendar calendar;
     private PendingIntent pendingIntent;
@@ -281,11 +285,8 @@ public class CreateTaskBottomSheetFragment extends BottomSheetDialogFragment {
             protected void onPostExecute(Void aVoid) {
                 super.onPostExecute(aVoid);
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-//                    createAnAlarm();
-
+//                  createAnAlarm();
                     push();
-
-
 
                 }
                 setRefreshListener.refresh();
@@ -298,124 +299,64 @@ public class CreateTaskBottomSheetFragment extends BottomSheetDialogFragment {
         st.execute();
     }
 
-//    private void setAlarm() {
-//
-//        alarmManager = (AlarmManager) this.getActivity().getSystemService(getContext().ALARM_SERVICE);
-//
-//        Intent intent = new Intent(getContext(),AlarmReceiver.class);
-//
-//        pendingIntent = PendingIntent.getBroadcast(getContext(),0,intent,0);
-//
-//        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,calendar.getTimeInMillis(),
-//                10000,pendingIntent);
-//
-//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-//            alarmManager.set(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
-//        }
-//
-//
-//        Toast.makeText(getContext(), "Alarm set Successfully", Toast.LENGTH_SHORT).show();
-//
-//
-//
-//    }
 
-//    private void createNotificationChannel() {
+//    @RequiresApi(api = Build.VERSION_CODES.M)
+//    public void createAnAlarm() {
+//        try {
+//            String[] items1 = taskDate.getText().toString().split("-");
+//            String dd = items1[0];
+//            String month = items1[1];
+//            String year = items1[2];
 //
-//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
-//            CharSequence name = "foxandroidReminderChannel";
-//            String description = "Channel For Alarm Manager";
-//            int importance = NotificationManager.IMPORTANCE_HIGH;
-//            NotificationChannel channel = new NotificationChannel("foxandroid",name,importance);
-//            channel.setDescription(description);
+//            String[] itemTime = taskTime.getText().toString().split(":");
+//            String hour = itemTime[0];
+//            String min = itemTime[1];
 //
-////            NotificationManager notificationManager = getSystemService(NotificationManager.class);
+//            Calendar cur_cal = new GregorianCalendar();
+//            cur_cal.setTimeInMillis(System.currentTimeMillis());
 //
-//            NotificationManager mNotificationManager =
-//                    (NotificationManager) this.getActivity().getSystemService(getContext().NOTIFICATION_SERVICE);
+//            Calendar cal = new GregorianCalendar();
+//            cal.set(Calendar.HOUR_OF_DAY, Integer.parseInt(hour));
+//            cal.set(Calendar.MINUTE, Integer.parseInt(min));
+//            cal.set(Calendar.SECOND, 0);
+//            cal.set(Calendar.MILLISECOND, 0);
+//            cal.set(Calendar.DATE, Integer.parseInt(dd));
 //
-//            mNotificationManager.createNotificationChannel(channel);
+//            Intent alarmIntent = new Intent(activity, AlarmBroadcastReceiver.class);
+//            alarmIntent.putExtra("TITLE", addTaskTitle.getText().toString());
+//            alarmIntent.putExtra("DESC", addTaskDescription.getText().toString());
+//            alarmIntent.putExtra("DATE", taskDate.getText().toString());
+//            alarmIntent.putExtra("TIME", taskTime.getText().toString());
 //
-//        }
+//            //PendingIntent pendingIntent = PendingIntent.getBroadcast(activity,count, alarmIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+////                alarmManager.setAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), pendingIntent);
+////                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+////                    alarmManager.setExact(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), pendingIntent);
+////                } else {
+////                    alarmManager.set(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), pendingIntent);
+////                }
+////                count ++;
+//                PendingIntent intent = PendingIntent.getBroadcast(activity, count, alarmIntent, 0);
+//                alarmManager.setExact(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis() - 120000, intent);
 //
-//
-//    }
-
-
-
-
-
-
-
-
-
-
-
-
-    public void timer(long delay){
-//        new Timer().schedule(new TimerTask() {
-//            @Override
-//            public void run() {
-//                push();
+////                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+////                        alarmManager.setAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis() - 5000, intent);
+////                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+////                            alarmManager.setExact(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis() - 5000, intent);
+////                        } else {
+////                            alarmManager.set(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis() - 5000, intent);
+////                        }
+////                    }
+////                count ++;
 //            }
-//        }, 0);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//    }
 
-//        cal.getTimeInMillis()-cur_cal.getTimeInMillis()-delay
-    }
-
-    @RequiresApi(api = Build.VERSION_CODES.M)
-    public void createAnAlarm() {
-        try {
-            String[] items1 = taskDate.getText().toString().split("-");
-            String dd = items1[0];
-            String month = items1[1];
-            String year = items1[2];
-
-            String[] itemTime = taskTime.getText().toString().split(":");
-            String hour = itemTime[0];
-            String min = itemTime[1];
-
-            Calendar cur_cal = new GregorianCalendar();
-            cur_cal.setTimeInMillis(System.currentTimeMillis());
-
-            Calendar cal = new GregorianCalendar();
-            cal.set(Calendar.HOUR_OF_DAY, Integer.parseInt(hour));
-            cal.set(Calendar.MINUTE, Integer.parseInt(min));
-            cal.set(Calendar.SECOND, 0);
-            cal.set(Calendar.MILLISECOND, 0);
-            cal.set(Calendar.DATE, Integer.parseInt(dd));
-
-            Intent alarmIntent = new Intent(activity, AlarmBroadcastReceiver.class);
-            alarmIntent.putExtra("TITLE", addTaskTitle.getText().toString());
-            alarmIntent.putExtra("DESC", addTaskDescription.getText().toString());
-            alarmIntent.putExtra("DATE", taskDate.getText().toString());
-            alarmIntent.putExtra("TIME", taskTime.getText().toString());
-
-            //PendingIntent pendingIntent = PendingIntent.getBroadcast(activity,count, alarmIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-//                alarmManager.setAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), pendingIntent);
-//                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-//                    alarmManager.setExact(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), pendingIntent);
-//                } else {
-//                    alarmManager.set(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), pendingIntent);
-//                }
-//                count ++;
-                PendingIntent intent = PendingIntent.getBroadcast(activity, count, alarmIntent, 0);
-                alarmManager.setExact(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis() - 120000, intent);
-
-//                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-//                        alarmManager.setAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis() - 5000, intent);
-//                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-//                            alarmManager.setExact(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis() - 5000, intent);
-//                        } else {
-//                            alarmManager.set(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis() - 5000, intent);
-//                        }
-//                    }
-//                count ++;
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+    public static void setDelayVal(Long val){
+        delay = val;
     }
 
     public void push(){
@@ -463,6 +404,18 @@ public class CreateTaskBottomSheetFragment extends BottomSheetDialogFragment {
                 .setAutoCancel(true)
                 .setContentIntent(pendingIntent);
 
+//        String tlala = cal.
+//        Log.d("A:");
+//        Log.e("B:"+cur_cal.getTimeInMillis());
+//        Log.e("C:"+delay);
+
+        Long lastDelay;
+        if(cal.getTimeInMillis()-cur_cal.getTimeInMillis()-delay<0){
+            lastDelay = 0L;
+        }
+        else{
+            lastDelay = cal.getTimeInMillis()-cur_cal.getTimeInMillis()-delay;
+        }
 
         final Handler handler = new Handler();
         Timer t = new Timer();
@@ -477,7 +430,8 @@ public class CreateTaskBottomSheetFragment extends BottomSheetDialogFragment {
                     }
                 });
             }
-        }, cal.getTimeInMillis()-cur_cal.getTimeInMillis()-120000 );
+
+        }, lastDelay );
 
 
 

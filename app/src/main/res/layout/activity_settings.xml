@@ -55,10 +55,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="5 Sec"
-                    android:id="@+id/text5sec"
+                    android:text="2 mins"
+                    android:id="@+id/text2mins"
                     android:textColor="#000000"
-                    android:textSize="30dp"
+                    android:textSize="30sp"
                     android:textStyle="bold"
                     tools:ignore="MissingConstraints"/>
 
@@ -87,8 +87,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="10 Sec"
-                    android:id="@+id/text10sec"
+                    android:text="3 mins"
+                    android:id="@+id/text3mins"
                     android:textColor="#000000"
                     android:textSize="30dp"
                     android:textStyle="bold"
@@ -219,8 +219,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1 week"
-                    android:id="@+id/text1week"
+                    android:text="2 days"
+                    android:id="@+id/text2days"
                     android:textColor="#000000"
                     android:textSize="30dp"
                     android:textStyle="bold"

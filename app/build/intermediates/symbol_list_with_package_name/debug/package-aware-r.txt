@@ -1404,13 +1404,13 @@ id taskEvent
 id taskRecycler
 id taskTime
 id text
-id text10sec
 id text1day
 id text1hr
-id text1week
 id text2
+id text2days
+id text2mins
 id text30mins
-id text5sec
+id text3mins
 id textSettings
 id textSpacerNoButtons
 id textSpacerNoTitle
