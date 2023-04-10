@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:2:1-53:12
-INJECTED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:2:1-53:12
-INJECTED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:2:1-53:12
-INJECTED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:2:1-53:12
+ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:2:1-56:12
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\SHAKTHI\.gradle\caches\transforms-2\files-2.1\16de5a105d918594ea18965f8161a8bc\material-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.github.zubairehman:AlarmManager:v1.2.0-alpha01] C:\Users\SHAKTHI\.gradle\caches\transforms-2\files-2.1\91fb3e9c985098f6a6737e82e5ea418d\jetified-AlarmManager-v1.2.0-alpha01\AndroidManifest.xml:2:1-21:12
 MERGED from [com.applandeo:material-calendar-view:1.7.0] C:\Users\SHAKTHI\.gradle\caches\transforms-2\files-2.1\5042ddf959709c75b80ce495d371a731\jetified-material-calendar-view-1.7.0\AndroidManifest.xml:2:1-11:12
@@ -53,20 +53,20 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\SHAKTHI\.gradle\caches\transfo
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\SHAKTHI\.gradle\caches\transforms-2\files-2.1\4dea87d08cf4eca2be6818de5406de80\lifecycle-runtime-2.1.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\SHAKTHI\.gradle\caches\transforms-2\files-2.1\9c87d4ce634b90f093cf672ae75a3e2d\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\SHAKTHI\.gradle\caches\transforms-2\files-2.1\f2e8952936b7109d6ac9ab1e40e3d573\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:2:1-53:12
-INJECTED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:2:1-53:12
-INJECTED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:2:1-56:12
 	package
 		ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:3:5-40
 		INJECTED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml
-		ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:2:1-53:12
+		ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:2:1-56:12
 		INJECTED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml
-		ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:2:1-53:12
+		ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:2:1-56:12
 		INJECTED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:2:11-69
@@ -103,7 +103,7 @@ ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\Androi
 	android:name
 		ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:12:22-74
 application
-ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:14:5-51:19
+ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:14:5-54:19
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\SHAKTHI\.gradle\caches\transforms-2\files-2.1\16de5a105d918594ea18965f8161a8bc\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\SHAKTHI\.gradle\caches\transforms-2\files-2.1\16de5a105d918594ea18965f8161a8bc\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.github.zubairehman:AlarmManager:v1.2.0-alpha01] C:\Users\SHAKTHI\.gradle\caches\transforms-2\files-2.1\91fb3e9c985098f6a6737e82e5ea418d\jetified-AlarmManager-v1.2.0-alpha01\AndroidManifest.xml:11:5-19:19
@@ -140,60 +140,66 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\SH
 		ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:21:9-40
 	android:name
 		ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:15:9-63
-activity#com.ouapproj.ShakJoRDVapp.activity.RateUs
+activity#com.ouapproj.ShakJoRDVapp.activity.Orientation
 ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:22:9-24:40
 	android:exported
 		ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:24:13-37
 	android:name
-		ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:23:13-44
-activity#com.ouapproj.ShakJoRDVapp.activity.SettingsActivity
+		ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:23:13-49
+activity#com.ouapproj.ShakJoRDVapp.activity.RateUs
 ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:25:9-27:40
 	android:exported
 		ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:27:13-37
 	android:name
-		ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:26:13-54
-activity#com.ouapproj.ShakJoRDVapp.activity.AlarmActivity
-ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:28:9-60
-	android:name
-		ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:28:19-57
-activity#com.ouapproj.ShakJoRDVapp.activity.MainActivity
-ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:29:9-35:20
-	android:name
-		ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:29:19-56
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:30:13-34:29
-action#android.intent.action.MAIN
-ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:31:17-69
-	android:name
-		ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:31:25-66
-category#android.intent.category.LAUNCHER
-ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:33:17-77
-	android:name
-		ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:33:27-74
-receiver#com.ouapproj.ShakJoRDVapp.broadcastReceiver.AlarmBroadcastReceiver
-ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:37:9-43:20
-	android:enabled
-		ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:39:13-36
-	android:name
-		ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:38:13-94
-intent-filter#action:name:android.intent.action.BOOT_COMPLETED
-ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:40:13-42:29
-action#android.intent.action.BOOT_COMPLETED
-ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:41:17-79
-	android:name
-		ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:41:25-76
-uses-library#com.google.android.maps
-ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:45:9-64
-	android:name
-		ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:45:23-61
-service#com.ouapproj.ShakJoRDVapp.broadcastReceiver.AlarmService
-ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:47:9-50:39
-	android:enabled
-		ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:49:13-35
+		ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:26:13-44
+activity#com.ouapproj.ShakJoRDVapp.activity.SettingsActivity
+ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:28:9-30:40
 	android:exported
-		ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:50:13-36
+		ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:30:13-37
 	android:name
-		ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:48:13-84
+		ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:29:13-54
+activity#com.ouapproj.ShakJoRDVapp.activity.AlarmActivity
+ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:31:9-60
+	android:name
+		ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:31:19-57
+activity#com.ouapproj.ShakJoRDVapp.activity.MainActivity
+ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:32:9-38:20
+	android:name
+		ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:32:19-56
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:33:13-37:29
+action#android.intent.action.MAIN
+ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:34:17-69
+	android:name
+		ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:34:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:36:17-77
+	android:name
+		ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:36:27-74
+receiver#com.ouapproj.ShakJoRDVapp.broadcastReceiver.AlarmBroadcastReceiver
+ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:40:9-46:20
+	android:enabled
+		ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:42:13-36
+	android:name
+		ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:41:13-94
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED
+ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:43:13-45:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:44:17-79
+	android:name
+		ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:44:25-76
+uses-library#com.google.android.maps
+ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:48:9-64
+	android:name
+		ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:48:23-61
+service#com.ouapproj.ShakJoRDVapp.broadcastReceiver.AlarmService
+ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:50:9-53:39
+	android:enabled
+		ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:52:13-35
+	android:exported
+		ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:53:13-36
+	android:name
+		ADDED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:51:13-84
 uses-sdk
 INJECTED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml

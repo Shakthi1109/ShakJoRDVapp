@@ -28,4 +28,11 @@
     <string name="_2_days">2 days</string>
     <string name="completed">COMPLETED</string>
     <string name="rate_us">RATE US</string>
+    <string name="big_letter">Dear User/ Prof, \n\nThank you for using our application. \n\nYou can appreciate our efforts by giving full notes for this project.</string>
+    <string name="task_title_placeholder" />
+    <string name="date_placeholder" />
+    <string name="time_placeholder" />
+    <string name="location_placeholder" />
+    <string name="person_placeholder" />
+    <string name="contact_placeholder" />
 </resources>

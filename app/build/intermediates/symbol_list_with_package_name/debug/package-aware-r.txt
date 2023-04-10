@@ -1136,6 +1136,7 @@ drawable share3
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable white
+font nunito_extra_bold
 id ALT
 id CTRL
 id FUNCTION
@@ -1233,6 +1234,7 @@ id clip_vertical
 id closeButton
 id collapseActionView
 id completedImage
+id contactTextView
 id container
 id content
 id contentPanel
@@ -1241,6 +1243,7 @@ id currentDateLabel
 id custom
 id customPanel
 id date
+id dateTextView
 id day
 id dayIcon
 id dayLabel
@@ -1299,6 +1302,7 @@ id line1
 id line3
 id listMode
 id list_item
+id locationTextView
 id many_days_picker
 id mapImg
 id masked
@@ -1337,6 +1341,7 @@ id parent
 id parentPanel
 id parent_matrix
 id percent
+id personTextView
 id phoneImg
 id pin
 id positive_button
@@ -1409,6 +1414,7 @@ id taskDate
 id taskEvent
 id taskRecycler
 id taskTime
+id taskTitleTextView
 id text
 id text1day
 id text1hr
@@ -1428,6 +1434,7 @@ id textinput_helper_text
 id thursdayLabel
 id time
 id timeAndData
+id timeTextView
 id title
 id titleDividerNoCustom
 id title_template
@@ -1512,6 +1519,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_alarm
 layout activity_main
+layout activity_orientation
 layout activity_rate_us
 layout activity_settings
 layout calendar_view
@@ -1602,15 +1610,18 @@ string address
 string allmeetings
 string app_name
 string appbar_scrolling_view_behavior
+string big_letter
 string bottom_sheet_behavior
 string character_counter_content_description
 string character_counter_pattern
 string completed
 string confirmation
 string congrats_you_have_completed_the_task_successfully
+string contact_placeholder
 string contactperson
 string createmeetings
 string createnewmeeting
+string date_placeholder
 string delete_confirmation
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
@@ -1618,6 +1629,7 @@ string fillthedetailsbelowtoaddameeting
 string hello
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
+string location_placeholder
 string material_calendar_friday
 string material_calendar_monday
 string material_calendar_negative_button
@@ -1638,11 +1650,14 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string person_placeholder
 string rate_us
 string search_menu_title
 string status_bar_notification_info_overflow
 string sureToDelete
 string sureToMarkAsComplete
+string task_title_placeholder
+string time_placeholder
 string yes
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

@@ -36,7 +36,7 @@
 18-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:12:22-74
 19
 20    <application
-20-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:14:5-51:19
+20-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:14:5-54:19
 21        android:name="com.ouapproj.ShakJoRDVapp.AppController"
 21-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:15:9-63
 22        android:allowBackup="true"
@@ -57,80 +57,86 @@
 30-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:21:9-40
 31        <activity
 31-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:22:9-24:40
-32            android:name="com.ouapproj.ShakJoRDVapp.activity.RateUs"
-32-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:23:13-44
+32            android:name="com.ouapproj.ShakJoRDVapp.activity.Orientation"
+32-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:23:13-49
 33            android:exported="false" />
 33-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:24:13-37
 34        <activity
 34-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:25:9-27:40
-35            android:name="com.ouapproj.ShakJoRDVapp.activity.SettingsActivity"
-35-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:26:13-54
+35            android:name="com.ouapproj.ShakJoRDVapp.activity.RateUs"
+35-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:26:13-44
 36            android:exported="false" />
 36-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:27:13-37
-37        <activity android:name="com.ouapproj.ShakJoRDVapp.activity.AlarmActivity" />
-37-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:28:9-60
-37-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:28:19-57
-38        <activity android:name="com.ouapproj.ShakJoRDVapp.activity.MainActivity" >
-38-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:29:9-35:20
-38-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:29:19-56
-39            <intent-filter>
-39-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:30:13-34:29
-40                <action android:name="android.intent.action.MAIN" />
-40-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:31:17-69
-40-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:31:25-66
-41
-42                <category android:name="android.intent.category.LAUNCHER" />
-42-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:33:17-77
-42-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:33:27-74
-43            </intent-filter>
-44        </activity>
-45
-46        <receiver
-46-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:37:9-43:20
-47            android:name="com.ouapproj.ShakJoRDVapp.broadcastReceiver.AlarmBroadcastReceiver"
-47-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:38:13-94
-48            android:enabled="false" >
-48-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:39:13-36
-49            <intent-filter>
-49-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:40:13-42:29
-50                <action android:name="android.intent.action.BOOT_COMPLETED" />
-50-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:41:17-79
-50-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:41:25-76
-51            </intent-filter>
-52        </receiver>
-53
-54        <uses-library android:name="com.google.android.maps" />
-54-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:45:9-64
-54-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:45:23-61
-55
-56        <service
-56-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:47:9-50:39
-57            android:name="com.ouapproj.ShakJoRDVapp.broadcastReceiver.AlarmService"
-57-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:48:13-84
-58            android:enabled="true"
-58-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:49:13-35
-59            android:exported="true" />
-59-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:50:13-36
-60
-61        <receiver android:name="com.zubair.alarmmanager.receivers.BootCompleteReceiver" >
-61-->[com.github.zubairehman:AlarmManager:v1.2.0-alpha01] C:\Users\SHAKTHI\.gradle\caches\transforms-2\files-2.1\91fb3e9c985098f6a6737e82e5ea418d\jetified-AlarmManager-v1.2.0-alpha01\AndroidManifest.xml:14:9-18:20
-61-->[com.github.zubairehman:AlarmManager:v1.2.0-alpha01] C:\Users\SHAKTHI\.gradle\caches\transforms-2\files-2.1\91fb3e9c985098f6a6737e82e5ea418d\jetified-AlarmManager-v1.2.0-alpha01\AndroidManifest.xml:14:19-88
-62            <intent-filter>
-62-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:40:13-42:29
-63                <action android:name="android.intent.action.BOOT_COMPLETED" />
-63-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:41:17-79
-63-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:41:25-76
-64            </intent-filter>
-65        </receiver>
-66
-67        <service
-67-->[androidx.room:room-runtime:2.2.5] C:\Users\SHAKTHI\.gradle\caches\transforms-2\files-2.1\ff92c23acb3ff63da9830c47d6fbd82e\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
-68            android:name="androidx.room.MultiInstanceInvalidationService"
-68-->[androidx.room:room-runtime:2.2.5] C:\Users\SHAKTHI\.gradle\caches\transforms-2\files-2.1\ff92c23acb3ff63da9830c47d6fbd82e\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
-69            android:directBootAware="true"
-69-->[androidx.room:room-runtime:2.2.5] C:\Users\SHAKTHI\.gradle\caches\transforms-2\files-2.1\ff92c23acb3ff63da9830c47d6fbd82e\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
-70            android:exported="false" />
-70-->[androidx.room:room-runtime:2.2.5] C:\Users\SHAKTHI\.gradle\caches\transforms-2\files-2.1\ff92c23acb3ff63da9830c47d6fbd82e\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
-71    </application>
-72
-73</manifest>
+37        <activity
+37-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:28:9-30:40
+38            android:name="com.ouapproj.ShakJoRDVapp.activity.SettingsActivity"
+38-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:29:13-54
+39            android:exported="false" />
+39-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:30:13-37
+40        <activity android:name="com.ouapproj.ShakJoRDVapp.activity.AlarmActivity" />
+40-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:31:9-60
+40-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:31:19-57
+41        <activity android:name="com.ouapproj.ShakJoRDVapp.activity.MainActivity" >
+41-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:32:9-38:20
+41-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:32:19-56
+42            <intent-filter>
+42-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:33:13-37:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:34:17-69
+43-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:34:25-66
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:36:17-77
+45-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:36:27-74
+46            </intent-filter>
+47        </activity>
+48
+49        <receiver
+49-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:40:9-46:20
+50            android:name="com.ouapproj.ShakJoRDVapp.broadcastReceiver.AlarmBroadcastReceiver"
+50-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:41:13-94
+51            android:enabled="false" >
+51-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:42:13-36
+52            <intent-filter>
+52-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:43:13-45:29
+53                <action android:name="android.intent.action.BOOT_COMPLETED" />
+53-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:44:17-79
+53-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:44:25-76
+54            </intent-filter>
+55        </receiver>
+56
+57        <uses-library android:name="com.google.android.maps" />
+57-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:48:9-64
+57-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:48:23-61
+58
+59        <service
+59-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:50:9-53:39
+60            android:name="com.ouapproj.ShakJoRDVapp.broadcastReceiver.AlarmService"
+60-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:51:13-84
+61            android:enabled="true"
+61-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:52:13-35
+62            android:exported="true" />
+62-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:53:13-36
+63
+64        <receiver android:name="com.zubair.alarmmanager.receivers.BootCompleteReceiver" >
+64-->[com.github.zubairehman:AlarmManager:v1.2.0-alpha01] C:\Users\SHAKTHI\.gradle\caches\transforms-2\files-2.1\91fb3e9c985098f6a6737e82e5ea418d\jetified-AlarmManager-v1.2.0-alpha01\AndroidManifest.xml:14:9-18:20
+64-->[com.github.zubairehman:AlarmManager:v1.2.0-alpha01] C:\Users\SHAKTHI\.gradle\caches\transforms-2\files-2.1\91fb3e9c985098f6a6737e82e5ea418d\jetified-AlarmManager-v1.2.0-alpha01\AndroidManifest.xml:14:19-88
+65            <intent-filter>
+65-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:43:13-45:29
+66                <action android:name="android.intent.action.BOOT_COMPLETED" />
+66-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:44:17-79
+66-->D:\Desktop\Android Proj\ShakJoRDVapp\ShakJoRDVapp\app\src\main\AndroidManifest.xml:44:25-76
+67            </intent-filter>
+68        </receiver>
+69
+70        <service
+70-->[androidx.room:room-runtime:2.2.5] C:\Users\SHAKTHI\.gradle\caches\transforms-2\files-2.1\ff92c23acb3ff63da9830c47d6fbd82e\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
+71            android:name="androidx.room.MultiInstanceInvalidationService"
+71-->[androidx.room:room-runtime:2.2.5] C:\Users\SHAKTHI\.gradle\caches\transforms-2\files-2.1\ff92c23acb3ff63da9830c47d6fbd82e\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
+72            android:directBootAware="true"
+72-->[androidx.room:room-runtime:2.2.5] C:\Users\SHAKTHI\.gradle\caches\transforms-2\files-2.1\ff92c23acb3ff63da9830c47d6fbd82e\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
+73            android:exported="false" />
+73-->[androidx.room:room-runtime:2.2.5] C:\Users\SHAKTHI\.gradle\caches\transforms-2\files-2.1\ff92c23acb3ff63da9830c47d6fbd82e\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
+74    </application>
+75
+76</manifest>

@@ -23,9 +23,16 @@
     <string name="_2_mins">2 mins</string>
     <string name="_3_mins">3 mins</string>
     <string name="_30_mins">30 mins</string>
-    <string name="_1_hour">1 hour</string>
-    <string name="_1_day">1 day</string>
-    <string name="_2_days">2 days</string>
-    <string name="completed">COMPLETED</string>
-    <string name="rate_us">RATE US</string>
+    <string name="_1_hour">1 heure</string>
+    <string name="_1_day">1 jour</string>
+    <string name="_2_days">2 jours</string>
+    <string name="completed">COMPLETÉE</string>
+    <string name="rate_us">Évaluez Nous</string>
+    <string name="big_letter">Cher utilisateur / Prof, \n\n Merci d\'utiliser notre application. \n\nVous pouvez apprécier nos efforts en donnant des notes complètes pour ce projet.</string>
+    <string name="task_title_placeholder" />
+    <string name="date_placeholder" />
+    <string name="time_placeholder" />
+    <string name="location_placeholder" />
+    <string name="person_placeholder" />
+    <string name="contact_placeholder" />
 </resources>

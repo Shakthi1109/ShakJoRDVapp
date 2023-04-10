@@ -26,6 +26,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.ouapproj.ShakJoRDVapp.R;
 import com.ouapproj.ShakJoRDVapp.activity.MainActivity;
+import com.ouapproj.ShakJoRDVapp.activity.Orientation;
+import com.ouapproj.ShakJoRDVapp.activity.RateUs;
 import com.ouapproj.ShakJoRDVapp.bottomSheetFragment.CreateTaskBottomSheetFragment;
 import com.ouapproj.ShakJoRDVapp.database.DatabaseClient;
 import com.ouapproj.ShakJoRDVapp.model.Task;
@@ -199,10 +201,35 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder
                             setPositiveButton(R.string.yes, (dialog, which) -> showCompleteDialog(task.getTaskId(), position))
                             .setNegativeButton(R.string.no, (dialog, which) -> dialog.cancel()).show();
                     break;
+                case R.id.menuView:
+                    startAct(position);
+                    break;
             }
             return false;
         });
         popupMenu.show();
+    }
+
+    public void startAct(int position){
+        Task task = taskList.get(position);
+        String temp = task.getEvent();
+        String tempName,tempNum ="";
+        if(temp.length()>1) {
+            tempName = temp.split(":")[0];
+            tempNum = temp.split(":")[1];
+        }else{
+            tempName=temp;
+            tempNum="0";
+        }
+        Intent i = new Intent(context, Orientation.class);
+        i.putExtra("Desc", task.getTaskTitle());
+        i.putExtra("Date", task.getDate());
+        i.putExtra("Time", task.getLastAlarm());
+        i.putExtra("Location", task.getTaskDescrption());
+        i.putExtra("Person", tempName);
+        i.putExtra("Contact", tempNum);
+        i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        context.startActivity(i);
     }
 
     public void showCompleteDialog(int taskId, int position) {

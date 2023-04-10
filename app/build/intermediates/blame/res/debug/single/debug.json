@@ -60,6 +60,10 @@
         "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable\\phone4.png"
     },
     {
+        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_orientation.xml.flat",
+        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\layout\\activity_orientation.xml"
+    },
+    {
         "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_add_black_24dp.xml.flat",
         "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable\\ic_add_black_24dp.xml"
     },
@@ -86,6 +90,10 @@
     {
         "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_france.png.flat",
         "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\drawable\\france.png"
+    },
+    {
+        "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\font_nunito_extra_bold.xml.flat",
+        "source": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\src\\main\\res\\font\\nunito_extra_bold.xml"
     },
     {
         "merged": "D:\\Desktop\\Android Proj\\ShakJoRDVapp\\ShakJoRDVapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mute.png.flat",
