@@ -2,7 +2,7 @@
 
 ### [Watch on Youtube](https://youtu.be/AVSEurXkx6Q?si=vBjjbNYhBNZWMx95)
 
-[![Viking_Quest_Unity3D](https://youtu.be/AVSEurXkx6Q?si=vBjjbNYhBNZWMx95)](https://youtu.be/AVSEurXkx6Q?si=vBjjbNYhBNZWMx95 "Click to Play Video")
+[![Viking_Quest_Unity3D](https://img.youtube.com/vi/AVSEurXkx6Q/maxresdefault.jpg)](https://youtu.be/AVSEurXkx6Q?si=vBjjbNYhBNZWMx95 "Click to Play Video")
 
 One can add a meeting into the app set the time for it you will get reminder on the exact time. You can check the list as well as complete mark the list as complete once a meeting is been completed, delete the meeting if it is no required, edit it to make changes in the date, time, title etc. 
 
